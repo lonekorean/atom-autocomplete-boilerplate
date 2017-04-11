@@ -1,1 +1,7 @@
-[]
+[
+	{
+		"displayText": "@snippet1",
+		"snippet": "This is a ${1:simple} snippet. Press tab to jump between arguments.",
+		"description": "A simple snippet."
+	}
+]
