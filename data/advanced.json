@@ -11,7 +11,7 @@
 	},
 	{
 		"displayText": "@snippet3",
-		"snippet": "Start typing to replace ${1:multiple} ${1:text} ${1:simultaneously}. Then hit tab to ${2:do} ${2:it} ${2:again}",
+		"snippet": "Start typing to replace ${1:multiple} ${1:text} ${1:simultaneously}. Then hit tab to ${2:do} ${2:it} ${2:again}.",
 		"description": "Yet another snippet."
 	},
 	{
