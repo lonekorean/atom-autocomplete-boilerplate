@@ -8,6 +8,8 @@ This package is not meant to be used directly. It's a sample package that you ca
 
 ## Installation
 
+Atom provides a built-in way to download and install packages, but for local development, you'll want to do it this way.
+
 1. Clone this repo.
 2. Make sure you have apm installed.
     - On Mac, you might need to start Atom and go to Atom &gt; Install Shell Commands.
@@ -27,15 +29,15 @@ After making code changes, you'll need to reload Atom to see those changes take 
 
 ## Provider Tiers
 
-This package includes three sample providers (Atom parlance for "things that provide suggestions for autocomplete").
+This package includes three sample providers (Atom parlance for "things that provide suggestions for autocomplete"). You can find them in the `/lib` folder. These are the features that each one introduces.
 
-### /lib/basic-provider.js
+### basic-provider.js
 
 The absolute simplest provider you can make. Works off a simple array of words.
 
 - Filters suggestions based on what was typed
 
-### /lib/intermediate-provider.js
+### intermediate-provider.js
 
 Takes things a little further. Reasonable starting point for a useful provider.
 
@@ -44,11 +46,12 @@ Takes things a little further. Reasonable starting point for a useful provider.
 - Case-insensitive suggestions
 - Displays extra data along with suggestions: description, more link, type icon, right text label
 
-### /lib/advanced-provider.js
+### advanced-provider.js
 
-Uses advanced suggestions retrieval and custom options.
+Retrieves snippet suggestions from an external API asynchronously.
 
 - Honors exceptions where suggestions will not be provided (within an HTML comment, in this case)
+- Prioritizes its own suggestions above others
 - Defines its own rules for determining the prefix used to find suggestions
 - Uses JavaScript Promises to fetch suggestions asynchronously
 - Retrieves suggestions from an external API instead of a local JSON file
