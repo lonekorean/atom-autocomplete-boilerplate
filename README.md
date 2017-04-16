@@ -19,7 +19,7 @@ Atom provides a built-in way to download and install packages, but for local dev
     - On Mac, you'll find it under Atom &gt; Preferences... &gt; Packages &gt; Community Packages.
     - On Windows, you'll find it under File &gt; Settings &gt; Packages &gt; Community Packages.
 
-## Hacking
+## Start Hacking
 
 Open up the atom-autocomplete-boilerplate project folder in Atom. Poke around in the various files (there aren't that many). Test the autocomplete with the files inside of `/samples`.
 
@@ -27,9 +27,7 @@ After making code changes, you'll need to reload Atom to see those changes take 
 - On Mac, hit `ctrl` + `option` + `command` + `L`.
 - On Windows, hit `ctrl` + `shift` + `F5`.
 
-## Provider Tiers
-
-This package includes three sample providers (Atom parlance for "things that provide suggestions for autocomplete"). You can find them in the `/lib` folder. These are the features that each one introduces.
+This package includes three sample providers. You can find them in the `/lib` folder. These are the features that each one introduces.
 
 ### basic-provider.js
 
