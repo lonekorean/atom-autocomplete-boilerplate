@@ -1,0 +1,3010 @@
+[
+  {
+    "description": "Was Fusion Summoned\nValue: 0x40000",
+    "text": "REASON_FUSION"
+  },
+  {
+    "description": "Allows direct attacking\nValue: 74",
+    "text": "EFFECT_DIRECT_ATTACK"
+  },
+  {
+    "description": "Removes a Link Marker\nValue: 424",
+    "text": "EFFECT_REMOVE_LINKMARKER"
+  },
+  {
+    "description": "Spell/Trap Zones\nValue: 0x08",
+    "text": "LOCATION_SZONE"
+  },
+  {
+    "description": "Limits which cards can be tributed\nValue: 154",
+    "text": "EFFECT_TRIBUTE_LIMIT"
+  },
+  {
+    "description": "Chain ID\nValue: 0x800",
+    "text": "CHAININFO_CHAIN_ID"
+  },
+  {
+    "description": "Before receiving/inflicting battle damage (only used in EFFECT_TYPE_CONTINUOUS) (?)\nValue: 1136",
+    "text": "EVENT_PRE_BATTLE_DAMAGE"
+  },
+  {
+    "description": "Effect resets when the card is shuffled into the deck\nValue: 0x00400000",
+    "text": "RESET_TODECK"
+  },
+  {
+    "description": "Triggered when any card status changes on the field\nValue: 0x0002",
+    "text": "EFFECT_TYPE_FIELD"
+  },
+  {
+    "description": "Value: 5",
+    "text": "HINT_EFFECT"
+  },
+  {
+    "description": "Value: 1",
+    "text": "CHINT_TURN"
+  },
+  {
+    "description": "Both players can use the effect\nValue: 0x1000",
+    "text": "EFFECT_FLAG_BOTH_SIDE"
+  },
+  {
+    "description": "Choose an effect to be activated\nValue: 550",
+    "text": "HINTMSG_EFFECT"
+  },
+  {
+    "description": "Only available in custom counter\nValue: 7",
+    "text": "ACTIVITY_CHAIN"
+  },
+  {
+    "description": "When an effect is activated\nValue: 1027",
+    "text": "EVENT_CHAINING"
+  },
+  {
+    "description": "Choose a face-up Attack Position monster\nValue: 522",
+    "text": "HINTMSG_FACEUPATTACK"
+  },
+  {
+    "description": "Accessible monster values ​​(for Card.AddMonsterAttribute()) (?)\nValue: 250",
+    "text": "EFFECT_PRE_MONSTER"
+  },
+  {
+    "description": "Turns a Deck upside down\nValue: 294",
+    "text": "EFFECT_REVERSE_DECK"
+  },
+  {
+    "description": "Effect resets when the card is return to the hand\nValue: 0x00200000",
+    "text": "RESET_TOHAND"
+  },
+  {
+    "description": "Zombie\nValue: 0x10",
+    "text": "RACE_ZOMBIE"
+  },
+  {
+    "description": "Card cannot attack\nValue: 85",
+    "text": "EFFECT_CANNOT_ATTACK"
+  },
+  {
+    "description": "The card is used as the inducing effect of cost (?)\nValue: 0x40000000",
+    "text": "EFFECT_FLAG_CVAL_CHECK"
+  },
+  {
+    "description": "Cannot enter Battle Phase\nValue: 185",
+    "text": "EFFECT_CANNOT_BP"
+  },
+  {
+    "description": "Rock\nValue: 0x100",
+    "text": "RACE_ROCK"
+  },
+  {
+    "description": "On the field (Monster + S/T Zones)\nValue: 0x0c",
+    "text": "LOCATION_ONFIELD"
+  },
+  {
+    "description": "WATER\nValue: 0x02",
+    "text": "ATTRIBUTE_WATER"
+  },
+  {
+    "description": "Limited number of uses in a Duel\nValue: 0x20000000",
+    "text": "EFFECT_COUNT_CODE_DUEL"
+  },
+  {
+    "description": "When a monster is Special Summoned, during Summon negation window\nValue: 1105",
+    "text": "EVENT_SPSUMMON"
+  },
+  {
+    "description": "Has no Level\nValue: 0x0020",
+    "text": "STATUS_NO_LEVEL"
+  },
+  {
+    "description": "Disables Special Summon\nValue: 22",
+    "text": "EFFECT_CANNOT_SPECIAL_SUMMON"
+  },
+  {
+    "description": "Continues to be a target (?)\nValue: 0x1000000",
+    "text": "EFFECT_FLAG_OWNER_RELATE"
+  },
+  {
+    "description": "Sea Serpent\nValue: 0x40000",
+    "text": "RACE_SEASERPENT"
+  },
+  {
+    "description": "Main Deck (or top of the deck, if used on redirect effects)\nValue: 0x01",
+    "text": "LOCATION_DECK"
+  },
+  {
+    "description": "Sent by an effect\nValue: 0x40",
+    "text": "REASON_EFFECT"
+  },
+  {
+    "description": "Card can attack in the first turn\nValue: 403",
+    "text": "EFFECT_BP_FIRST_TURN"
+  },
+  {
+    "description": "Reptile\nValue: 0x80000",
+    "text": "RACE_REPTILE"
+  },
+  {
+    "description": "Trap Monster\nValue: 0x100",
+    "text": "TYPE_TRAPMONSTER"
+  },
+  {
+    "description": "Change the final Rank\nValue: 315",
+    "text": "EFFECT_CHANGE_RANK_FINAL"
+  },
+  {
+    "description": "Fairy\nValue: 0x4",
+    "text": "RACE_FAIRY"
+  },
+  {
+    "description": "Changes an LP cost value\nValue: 170",
+    "text": "EFFECT_LPCOST_CHANGE"
+  },
+  {
+    "description": "Summoning rules (?)\nValue: 320",
+    "text": "EFFECT_SPSUMMON_PROC_G"
+  },
+  {
+    "description": "Transforms ATK value (increases/decreases)\nValue: 100",
+    "text": "EFFECT_UPDATE_ATTACK"
+  },
+  {
+    "description": "Match Winners' effect\nValue: 300",
+    "text": "EFFECT_MATCH_KILL"
+  },
+  {
+    "description": "At the end of the Battle Phase\nValue: 0x10",
+    "text": "TIMING_BATTLE_END"
+  },
+  {
+    "description": "LP gain effect\nValue: 0x100000",
+    "text": "CATEGORY_RECOVER"
+  },
+  {
+    "description": "Cards attached as Xyz Material\nValue: 0x80",
+    "text": "LOCATION_OVERLAY"
+  },
+  {
+    "description": "Value property of this effect is a function\nValue: 0x0002",
+    "text": "EFFECT_FLAG_FUNC_VALUE"
+  },
+  {
+    "description": "Field Spell Card\nValue: 0x80000",
+    "text": "TYPE_FIELD"
+  },
+  {
+    "description": "When a card is sent to hand\nValue: 1012",
+    "text": "EVENT_TO_HAND"
+  },
+  {
+    "description": "Monster Card\nValue: 0x1",
+    "text": "TYPE_MONSTER"
+  },
+  {
+    "description": "When cards are checked to ajust field status (adjust_all() adjustment) (?)\nValue: 1040",
+    "text": "EVENT_ADJUST"
+  },
+  {
+    "description": "Effect targets a player\nValue: 0x0800",
+    "text": "EFFECT_FLAG_PLAYER_TARGET"
+  },
+  {
+    "description": "Negate attack (Dedicated by Duel.NegateAttack()) (?)\nValue: 197",
+    "text": "EFFECT_ATTACK_DISABLED"
+  },
+  {
+    "description": "Effect targets a card(s)\nValue: 0x0010",
+    "text": "EFFECT_FLAG_CARD_TARGET"
+  },
+  {
+    "description": "max number for adding/removing counters, by card::add_counter(), field::remove_counter()\nValue: 65535",
+    "text": "MAX_COUNTER"
+  },
+  {
+    "description": "Gemini Monster\nValue: 0x800",
+    "text": "TYPE_DUAL"
+  },
+  {
+    "description": "Monster uses more Zones\nValue: 261",
+    "text": "EFFECT_USE_EXTRA_MZONE"
+  },
+  {
+    "description": "Destruction effect\nValue: 0x1",
+    "text": "CATEGORY_DESTROY"
+  },
+  {
+    "description": "Face-up\nValue: 0x5",
+    "text": "POS_FACEUP"
+  },
+  {
+    "description": "Prevents Tributing\nValue: 46",
+    "text": "EFFECT_CANNOT_RELEASE"
+  },
+  {
+    "description": "Effect resets when the card becomes Xyz Material\nValue: 0x04000000",
+    "text": "RESET_OVERLAY"
+  },
+  {
+    "description": "Prevents the card from being Tributed for a Tribute Summon\nValue: 43",
+    "text": "EFFECT_UNRELEASABLE_SUM"
+  },
+  {
+    "description": "Ignition effect\nValue: 0x0040",
+    "text": "EFFECT_TYPE_IGNITION"
+  },
+  {
+    "description": "Adds an archetype\nValue: 334",
+    "text": "EFFECT_ADD_SETCODE"
+  },
+  {
+    "description": "Was Synchro Summoned\nValue: 0x80000",
+    "text": "REASON_SYNCHRO"
+  },
+  {
+    "description": "Effect resets when the card moves from MZone to S/TZone or vice versa\nValue: 0x08000000",
+    "text": "RESET_MSCHANGE"
+  },
+  {
+    "description": "Only valid for yourself\nValue: 0x20000",
+    "text": "EFFECT_FLAG_SINGLE_RANGE"
+  },
+  {
+    "description": "Chain target parameter\nValue: 0x100",
+    "text": "CHAININFO_TARGET_PARAM"
+  },
+  {
+    "description": "Checks cards used as Synchro Material\nValue: 310",
+    "text": "EFFECT_SYNCHRO_CHECK"
+  },
+  {
+    "description": "Prevents Spirit Monters from returning to the hand during End Phase\nValue: 280",
+    "text": "EFFECT_SPIRIT_DONOT_RETURN"
+  },
+  {
+    "description": "Defense Position\nValue: 0xc",
+    "text": "POS_DEFENSE"
+  },
+  {
+    "description": "Change Level effect\nValue: 0x8000000",
+    "text": "CATEGORY_LVCHANGE"
+  },
+  {
+    "description": "Increases/decreases Right Pendulum Scale\nValue: 136",
+    "text": "EFFECT_UPDATE_RSCALE"
+  },
+  {
+    "description": "Field Zone\nValue: 0x100",
+    "text": "LOCATION_FZONE"
+  },
+  {
+    "description": "Prevents repeated recalculation\nValue: 0x200000",
+    "text": "EFFECT_FLAG_REPEAT"
+  },
+  {
+    "description": "Prevents attack target\nValue: 70",
+    "text": "EFFECT_CANNOT_BE_BATTLE_TARGET"
+  },
+  {
+    "description": "Treat Rank as Level (?)\nValue: 411",
+    "text": "EFFECT_RANK_LEVEL_S"
+  },
+  {
+    "description": "Choose an option\nValue: 555",
+    "text": "HINTMSG_OPTION"
+  },
+  {
+    "description": "Being Special Summoned\nValue: 0x0080",
+    "text": "STATUS_SPSUMMON_STEP"
+  },
+  {
+    "description": "Activation of S/T\nValue: 0x0010",
+    "text": "EFFECT_TYPE_ACTIVATE"
+  },
+  {
+    "description": "Redirects cards going to GY\nValue: 63",
+    "text": "EFFECT_TO_GRAVE_REDIRECT"
+  },
+  {
+    "description": "At the end of a chain\nValue: 0x8000",
+    "text": "TIMING_CHAIN_END"
+  },
+  {
+    "description": "Normal Summoned/Set this turn\nValue: 0x0800",
+    "text": "STATUS_SUMMON_TURN"
+  },
+  {
+    "description": "Cannot be negated (?)\nValue: 0x0400",
+    "text": "EFFECT_FLAG_CANNOT_DISABLE"
+  },
+  {
+    "description": "S/T sent to GY after the chain is processed\nValue: 0x2000",
+    "text": "STATUS_LEAVE_CONFIRMED"
+  },
+  {
+    "description": "Is ready (not moving, summoning, or activating)\nValue: 0x0400",
+    "text": "STATUS_EFFECT_ENABLED"
+  },
+  {
+    "description": "Only this card can be attacked\nValue: 196",
+    "text": "EFFECT_ONLY_BE_ATTACKED"
+  },
+  {
+    "description": "Adds a cost for activating effects\nValue: 90",
+    "text": "EFFECT_ACTIVATE_COST"
+  },
+  {
+    "description": "Effect is also applicable when the battle damage is determined\nValue: 0x2000000",
+    "text": "EFFECT_FLAG_AVAILABLE_BD"
+  },
+  {
+    "description": "The effect of Necrovalley\nValue: 291",
+    "text": "EFFECT_NECRO_VALLEY"
+  },
+  {
+    "description": "Choose the materials for the Xyz Summon\nValue: 513",
+    "text": "HINTMSG_XMATERIAL"
+  },
+  {
+    "description": "Value: 10",
+    "text": "ASSUME_LINKMARKER"
+  },
+  {
+    "description": "Sent by destruction\nValue: 0x1",
+    "text": "REASON_DESTROY"
+  },
+  {
+    "description": "Changes type (card type)\nValue: 117",
+    "text": "EFFECT_CHANGE_TYPE"
+  },
+  {
+    "description": "Trigger prevention (?)\nValue: 7",
+    "text": "EFFECT_CANNOT_TRIGGER"
+  },
+  {
+    "description": "Optional alternative to destruction\nValue: 50",
+    "text": "EFFECT_DESTROY_REPLACE"
+  },
+  {
+    "description": "Xyz Material amount limit flag\nValue: 0x80",
+    "text": "GLOBALFLAG_XMAT_COUNT_LIMIT"
+  },
+  {
+    "description": "Being Summoned\nValue: 0x0200",
+    "text": "STATUS_SUMMONING"
+  },
+  {
+    "description": "Deck is reversed flag\nValue: 0x1",
+    "text": "GLOBALFLAG_DECK_REVERSE_CHECK"
+  },
+  {
+    "description": "Removes attribute(s)\nValue: 126",
+    "text": "EFFECT_REMOVE_ATTRIBUTE"
+  },
+  {
+    "description": "Changes attribute(s)\nValue: 127",
+    "text": "EFFECT_CHANGE_ATTRIBUTE"
+  },
+  {
+    "description": "Normal Monster\nValue: 0x10",
+    "text": "TYPE_NORMAL"
+  },
+  {
+    "description": "Link Monster\nValue: 0x4000000",
+    "text": "TYPE_LINK"
+  },
+  {
+    "description": "\"This effect cannot be negated\"\nValue: 0x0200",
+    "text": "EFFECT_FLAG_CANNOT_NEGATE"
+  },
+  {
+    "description": "Value: 0x40000002",
+    "text": "OPCODE_MUL"
+  },
+  {
+    "description": "Remove Brainwashing flag\nValue: 0x2",
+    "text": "GLOBALFLAG_BRAINWASHING_CHECK"
+  },
+  {
+    "description": "Treat Level as Rank (?)\nValue: 410",
+    "text": "EFFECT_LEVEL_RANK_S"
+  },
+  {
+    "description": "Effect of \"Rise to Full Height\"\nValue: 342",
+    "text": "EFFECT_RISE_TO_FULL_HEIGHT"
+  },
+  {
+    "description": "This value is automatically added by these EFFECT_TYPE_s: ACTIVATE, FLIP, IGNITION, TRIGGER_O, QUICK_O, TRIGGER_F, QUICK_F, CONTINUOUS\nValue: 0x0008",
+    "text": "EFFECT_TYPE_ACTIONS"
+  },
+  {
+    "description": "Treat Rank as Level (?)\nValue: 409",
+    "text": "EFFECT_RANK_LEVEL"
+  },
+  {
+    "description": "Sets the final ATK value\nValue: 102",
+    "text": "EFFECT_SET_ATTACK_FINAL"
+  },
+  {
+    "description": "Swaps original ATK and DEF\nValue: 110",
+    "text": "EFFECT_SWAP_BASE_AD"
+  },
+  {
+    "description": "At the damage calculation\nValue: 0x4000",
+    "text": "TIMING_DAMAGE_CAL"
+  },
+  {
+    "description": "Allows other cards to be Tributed (as in The Monarch's Stormfoth)\nValue: 155",
+    "text": "EFFECT_EXTRA_RELEASE_SUM"
+  },
+  {
+    "description": "Reset to copy the effect (?)\nValue: 0x8000",
+    "text": "RESET_COPY"
+  },
+  {
+    "description": "Effect considers events of the opponent player\nValue: 0x800000",
+    "text": "EFFECT_FLAG_EVENT_PLAYER"
+  },
+  {
+    "description": "At preparation of chain processing (?)\nValue: 1021",
+    "text": "EVENT_CHAIN_ACTIVATING"
+  },
+  {
+    "description": "Prevents Spirit Monters from returning to the hand during End Phase (optional)\nValue: 281",
+    "text": "EFFECT_SPIRIT_MAYNOT_RETURN"
+  },
+  {
+    "description": "Winged Beast\nValue: 0x200",
+    "text": "RACE_WINDBEAST"
+  },
+  {
+    "description": "Limits the amount of a counter on the card\nValue: 0x20000",
+    "text": "EFFECT_COUNTER_LIMIT"
+  },
+  {
+    "description": "Sets final Link Rating\nValue: 422",
+    "text": "EFFECT_CHANGE_LINK_FINAL"
+  },
+  {
+    "description": "Card can be used as Fusion Material with another name\nValue: 340",
+    "text": "EFFECT_ADD_FUSION_CODE"
+  },
+  {
+    "description": "Spell Card\nValue: 0x2",
+    "text": "TYPE_SPELL"
+  },
+  {
+    "description": "Coin toss effect\nValue: 0x1000000",
+    "text": "CATEGORY_COIN"
+  },
+  {
+    "description": "Fusion Monster\nValue: 0x40",
+    "text": "TYPE_FUSION"
+  },
+  {
+    "description": "Before conducting the usual draw during Draw Phase\nValue: 1113",
+    "text": "EVENT_PREDRAW"
+  },
+  {
+    "description": "Special Summon procedure\nValue: 34",
+    "text": "EFFECT_SPSUMMON_PROC"
+  },
+  {
+    "description": "Reply to the converted damage (?)\nValue: 0x8000",
+    "text": "REASON_RDAMAGE"
+  },
+  {
+    "description": "Toon Monster\nValue: 0x400000",
+    "text": "TYPE_TOON"
+  },
+  {
+    "description": "Adds a Type (monster Type)\nValue: 120",
+    "text": "EFFECT_ADD_RACE"
+  },
+  {
+    "description": "Union Monster\nValue: 0x400",
+    "text": "TYPE_UNION"
+  },
+  {
+    "description": "Disables Normal Summon\nValue: 20",
+    "text": "EFFECT_CANNOT_SUMMON"
+  },
+  {
+    "description": "Xyz Summoned\nValue: 0x49000000",
+    "text": "SUMMON_TYPE_XYZ"
+  },
+  {
+    "description": "Xyz Monster\nValue: 0x800000",
+    "text": "TYPE_XYZ"
+  },
+  {
+    "description": "Attack Position\nValue: 0x3",
+    "text": "POS_ATTACK"
+  },
+  {
+    "description": "Cannot enter Main Phase 2\nValue: 186",
+    "text": "EFFECT_CANNOT_M2"
+  },
+  {
+    "description": "Fish\nValue: 0x20000",
+    "text": "RACE_FISH"
+  },
+  {
+    "description": "Face-down Defense Position\nValue: 0x8",
+    "text": "POS_FACEDOWN_DEFENSE"
+  },
+  {
+    "description": "Thunder\nValue: 0x1000",
+    "text": "RACE_THUNDER"
+  },
+  {
+    "description": "Activation of Trap from hand\nValue: 15",
+    "text": "EFFECT_TRAP_ACT_IN_HAND"
+  },
+  {
+    "description": "Tribute replacement (?)\nValue: 51",
+    "text": "EFFECT_RELEASE_REPLACE"
+  },
+  {
+    "description": "When a monster declares an attack\nValue: 1130",
+    "text": "EVENT_ATTACK_ANNOUNCE"
+  },
+  {
+    "description": "(?)\nValue: 0x8",
+    "text": "GLOBALFLAG_DELAYED_QUICKEFFECT"
+  },
+  {
+    "description": "When the chain effect is negated (?)\nValue: 1025",
+    "text": "EVENT_CHAIN_DISABLED"
+  },
+  {
+    "description": "Allows player to attack own monsters\nValue: 406",
+    "text": "EFFECT_SELF_ATTACK"
+  },
+  {
+    "description": "Value: 3",
+    "text": "HINT_SELECTMSG"
+  },
+  {
+    "description": "Link Marker\nValue: 0x008",
+    "text": "LINK_MARKER_LEFT"
+  },
+  {
+    "description": "Spell/Trap can be activated from the hand during your opponent's turn\nValue: 311",
+    "text": "EFFECT_QP_ACT_IN_NTPHAND"
+  },
+  {
+    "description": "Effect will become valid\nValue: 0x0002",
+    "text": "STATUS_TO_ENABLE"
+  },
+  {
+    "description": "Normal Summon alternative procedure\nValue: 32",
+    "text": "EFFECT_SUMMON_PROC"
+  },
+  {
+    "description": "Trap Monster negation\nValue: 10",
+    "text": "EFFECT_DISABLE_TRAPMONSTER"
+  },
+  {
+    "description": "When a card is banished\nValue: 1011",
+    "text": "EVENT_REMOVE"
+  },
+  {
+    "description": "Sets Level of the card used as Synchro Material\nValue: 240",
+    "text": "EFFECT_SYNCHRO_LEVEL"
+  },
+  {
+    "description": "Damage effect\nValue: 0x80000",
+    "text": "CATEGORY_DAMAGE"
+  },
+  {
+    "description": "9 digit, by DataManager::GetDesc()\nValue: 268435455",
+    "text": "MAX_ID"
+  },
+  {
+    "description": "Effect destruction immunity\nValue: 41",
+    "text": "EFFECT_INDESTRUCTABLE_EFFECT"
+  },
+  {
+    "description": "Sets a limit for equip target\nValue: 76",
+    "text": "EFFECT_EQUIP_LIMIT"
+  },
+  {
+    "description": "Face-up Defense Position\nValue: 0x4",
+    "text": "POS_FACEUP_DEFENSE"
+  },
+  {
+    "description": "0x1fe0000+RESET_DISABLE\nValue: 0x1ff0000",
+    "text": "RESETS_STANDARD_DISABLE"
+  },
+  {
+    "description": "Player cannot lose the Duel because of a card effect\nValue: 402",
+    "text": "EFFECT_CANNOT_LOSE_EFFECT"
+  },
+  {
+    "description": "Effect is applied immediately when the card is activated\nValue: 0x80000000",
+    "text": "EFFECT_FLAG_IMMEDIATELY_APPLY"
+  },
+  {
+    "description": "After a monster is Set\nValue: 0x200",
+    "text": "TIMING_MSET"
+  },
+  {
+    "description": "Limits the amount of Summons on a turn\nValue: 28",
+    "text": "EFFECT_SET_SUMMON_COUNT_LIMIT"
+  },
+  {
+    "description": "You choose the attack targets for your opponent\nValue: 345",
+    "text": "EFFECT_PATRICIAN_OF_DARKNESS"
+  },
+  {
+    "description": "(?)\nValue: 247",
+    "text": "EFFECT_TUNE_MAGICIAN_X"
+  },
+  {
+    "description": "Activation negation immunity\nValue: 12",
+    "text": "EFFECT_CANNOT_INACTIVATE"
+  },
+  {
+    "description": "Beast\nValue: 0x4000",
+    "text": "RACE_BEAST"
+  },
+  {
+    "description": "Link Marker\nValue: 0x001",
+    "text": "LINK_MARKER_BOTTOM_LEFT"
+  },
+  {
+    "description": "Adds attribute(s)\nValue: 125",
+    "text": "EFFECT_ADD_ATTRIBUTE"
+  },
+  {
+    "description": "Decreases the number of Tributes required for a Set (Tribute Summon)\nValue: 152",
+    "text": "EFFECT_DECREASE_TRIBUTE_SET"
+  },
+  {
+    "description": "Prevents battle damage to opponent\nValue: 200",
+    "text": "EFFECT_NO_BATTLE_DAMAGE"
+  },
+  {
+    "description": "Choose a card to be equipped\nValue: 518",
+    "text": "HINTMSG_EQUIP"
+  },
+  {
+    "description": "Pendulum Monster\nValue: 0x1000000",
+    "text": "TYPE_PENDULUM"
+  },
+  {
+    "description": "Reason for negation\nValue: 0x200",
+    "text": "CHAININFO_DISABLE_REASON"
+  },
+  {
+    "description": "When a phase begins\nValue: 0x2000",
+    "text": "EVENT_PHASE_START"
+  },
+  {
+    "description": "Summon negation effect\nValue: 0x8000",
+    "text": "CATEGORY_DISABLE_SUMMON"
+  },
+  {
+    "description": "Effect resets under specific conditions\nValue: 0x1000",
+    "text": "RESET_EVENT"
+  },
+  {
+    "description": "Send to Deck effect\nValue: 0x10",
+    "text": "CATEGORY_TODECK"
+  },
+  {
+    "description": "Normal Summon negation immunity\nValue: 26",
+    "text": "EFFECT_CANNOT_DISABLE_SUMMON"
+  },
+  {
+    "description": "Dragon\nValue: 0x2000",
+    "text": "RACE_DRAGON"
+  },
+  {
+    "description": "Card cannot be used as Synchro Material\nValue: 236",
+    "text": "EFFECT_CANNOT_BE_SYNCHRO_MATERIAL"
+  },
+  {
+    "description": "Card must be used as Synchro Material\nValue: 312",
+    "text": "EFFECT_MUST_BE_SMATERIAL"
+  },
+  {
+    "description": "Prevents Tributing for card effects\nValue: 48",
+    "text": "EFFECT_UNRELEASABLE_EFFECT"
+  },
+  {
+    "description": "Changes card name\nValue: 114",
+    "text": "EFFECT_CHANGE_CODE"
+  },
+  {
+    "description": "Continuous S/T Card\nValue: 0x20000",
+    "text": "TYPE_CONTINUOUS"
+  },
+  {
+    "description": "Adds a cost for attacking\nValue: 96",
+    "text": "EFFECT_ATTACK_COST"
+  },
+  {
+    "description": "N/A\nValue: 1023",
+    "text": "EVENT_CHAIN_ACTIVATED"
+  },
+  {
+    "description": "Battled opponent's monster\nValue: 0x10000000",
+    "text": "STATUS_OPPO_BATTLE"
+  },
+  {
+    "description": "Trap Card\nValue: 0x4",
+    "text": "TYPE_TRAP"
+  },
+  {
+    "description": "Hand\nValue: 0x02",
+    "text": "LOCATION_HAND"
+  },
+  {
+    "description": "Leave GY effect\nValue: 0x4000000",
+    "text": "CATEGORY_LEAVE_GRAVE"
+  },
+  {
+    "description": "Re-rolling dice (?)\nValue: 221",
+    "text": "EFFECT_TOSS_DICE_REPLACE"
+  },
+  {
+    "description": "Limits Synchro Material\nValue: 353",
+    "text": "EFFECT_TUNER_MATERIAL_LIMIT"
+  },
+  {
+    "description": "Link Summoned\nValue: 0x4c000000",
+    "text": "SUMMON_TYPE_LINK"
+  },
+  {
+    "description": "Removes a type (card type)\nValue: 116",
+    "text": "EFFECT_REMOVE_TYPE"
+  },
+  {
+    "description": "Card must attack\nValue: 191",
+    "text": "EFFECT_MUST_ATTACK"
+  },
+  {
+    "description": "Effect Monster\nValue: 0x20",
+    "text": "TYPE_EFFECT"
+  },
+  {
+    "description": "Cannot play (?)\nValue: 0x4000000",
+    "text": "STATUS_FORBIDDEN"
+  },
+  {
+    "description": "Quick-Play Spell Card\nValue: 0x10000",
+    "text": "TYPE_QUICKPLAY"
+  },
+  {
+    "description": "At the beginning of chain processing (after EVENT_CHAIN_ACTIVATING) (?)\nValue: 1020",
+    "text": "EVENT_CHAIN_SOLVING"
+  },
+  {
+    "description": "Flip effect\nValue: 0x0020",
+    "text": "EFFECT_TYPE_FLIP"
+  },
+  {
+    "description": "Limits reviving condition\nValue: 31",
+    "text": "EFFECT_REVIVE_LIMIT"
+  },
+  {
+    "description": "Choose a revealed card\nValue: 526",
+    "text": "HINTMSG_CONFIRM"
+  },
+  {
+    "description": "Position change immunity\nValue: 14",
+    "text": "EFFECT_CANNOT_CHANGE_POSITION"
+  },
+  {
+    "description": "Link Marker\nValue: 0x100",
+    "text": "LINK_MARKER_TOP_RIGHT"
+  },
+  {
+    "description": "Makes a card public\nValue: 160",
+    "text": "EFFECT_PUBLIC"
+  },
+  {
+    "description": "Effect resets when the card goes to GY\nValue: 0x00040000",
+    "text": "RESET_TOGRAVE"
+  },
+  {
+    "description": "Value: 1",
+    "text": "HINT_EVENT"
+  },
+  {
+    "description": "Re-tossing coins (?)\nValue: 220",
+    "text": "EFFECT_TOSS_COIN_REPLACE"
+  },
+  {
+    "description": "Change position effect\nValue: 0x1000",
+    "text": "CATEGORY_POSITION"
+  },
+  {
+    "description": "When a card is Tributed\nValue: 1017",
+    "text": "EVENT_RELEASE"
+  },
+  {
+    "description": "Was Link Summoned\nValue: 0x10000000",
+    "text": "REASON_LINK"
+  },
+  {
+    "description": "Effect resets on your own turn\nValue: 0x10000000",
+    "text": "RESET_SELF_TURN"
+  },
+  {
+    "description": "In chain negation\nValue: 9",
+    "text": "EFFECT_DISABLE_CHAIN"
+  },
+  {
+    "description": "Tribute Summoned\nValue: 0x11000000",
+    "text": "SUMMON_TYPE_ADVANCE"
+  },
+  {
+    "description": "Changed position (?)\nValue: 0x0100",
+    "text": "STATUS_FORM_CHANGED"
+  },
+  {
+    "description": "At the beginning of the game\nValue: 1000",
+    "text": "EVENT_STARTUP"
+  },
+  {
+    "description": "AI (for endgame) (?)\nValue: 0x40",
+    "text": "DUEL_SIMPLE_AI"
+  },
+  {
+    "description": "Returned to GY\nValue: 0x20000",
+    "text": "REASON_RETURN"
+  },
+  {
+    "description": "Card can attack all monsters once each\nValue: 193",
+    "text": "EFFECT_ATTACK_ALL"
+  },
+  {
+    "description": "Deck destruction effect\nValue: 0x40",
+    "text": "CATEGORY_DECKDES"
+  },
+  {
+    "description": "Skips a turn\nValue: 188",
+    "text": "EFFECT_SKIP_TURN"
+  },
+  {
+    "description": "Chain number\nValue: 0x01",
+    "text": "CHAININFO_CHAIN_COUNT"
+  },
+  {
+    "description": "Was Special Summoned\nValue: 0x800",
+    "text": "REASON_SPSUMMON"
+  },
+  {
+    "description": "Activation prevention\nValue: 6",
+    "text": "EFFECT_CANNOT_ACTIVATE"
+  },
+  {
+    "description": "Was Summoned by any means\nValue: 0x10",
+    "text": "REASON_SUMMON"
+  },
+  {
+    "description": "Change side reset (?)\nValue: 0x00020000",
+    "text": "RESET_TURN_SET"
+  },
+  {
+    "description": "Limits amount of S/T Zones used\nValue: 264",
+    "text": "EFFECT_MAX_SZONE"
+  },
+  {
+    "description": "All Types\nValue: 0x1ffffff",
+    "text": "RACE_ALL"
+  },
+  {
+    "description": "Forced trigger effect\nValue: 0x0200",
+    "text": "EFFECT_TYPE_TRIGGER_F"
+  },
+  {
+    "description": "Activated from hand\nValue: 0x8000000",
+    "text": "STATUS_ACT_FROM_HAND"
+  },
+  {
+    "description": "Adds a card name\nValue: 113",
+    "text": "EFFECT_ADD_CODE"
+  },
+  {
+    "description": "After a card is sent to GY\nValue: 0x800000",
+    "text": "TIMING_TOGRAVE"
+  },
+  {
+    "description": "When an attack is negated\nValue: 1142",
+    "text": "EVENT_ATTACK_DISABLED"
+  },
+  {
+    "description": "At the End Phase\nValue: 0x20",
+    "text": "TIMING_END_PHASE"
+  },
+  {
+    "description": "Was flipped\nValue: 0x2000",
+    "text": "REASON_FLIP"
+  },
+  {
+    "description": "Disables Setting monsters\nValue: 23",
+    "text": "EFFECT_CANNOT_MSET"
+  },
+  {
+    "description": "Synchro Summoned\nValue: 0x46000000",
+    "text": "SUMMON_TYPE_SYNCHRO"
+  },
+  {
+    "description": "Occasion-induced effect, EFFECT_TYPE_CONTINUOUS for sustainable effects (?)\nValue: 0x10000",
+    "text": "EFFECT_FLAG_DELAY"
+  },
+  {
+    "description": "Effect resets when control of the card changes\nValue: 0x02000000",
+    "text": "RESET_CONTROL"
+  },
+  {
+    "description": "Insect\nValue: 0x800",
+    "text": "RACE_INSECT"
+  },
+  {
+    "description": "There can only be one on the field (Dedicated for Card.SetUniqueOnField()) (?)\nValue: 297",
+    "text": "EFFECT_UNIQUE_CHECK"
+  },
+  {
+    "description": "Spellcaster\nValue: 0x2",
+    "text": "RACE_SPELLCASTER"
+  },
+  {
+    "description": "Choose a card type\nValue: 554",
+    "text": "HINTMSG_CARDTYPE"
+  },
+  {
+    "description": "Fusion Summoned\nValue: 0x43000000",
+    "text": "SUMMON_TYPE_FUSION"
+  },
+  {
+    "description": "Prevents the card destruction up to X times in a turn\nValue: 47",
+    "text": "EFFECT_INDESTRUCTABLE_COUNT"
+  },
+  {
+    "description": "Warrior\nValue: 0x1",
+    "text": "RACE_WARRIOR"
+  },
+  {
+    "description": "Redirect to bottom of the deck\nValue: 0x10001",
+    "text": "LOCATION_DECKBOT"
+  },
+  {
+    "description": "Activation negation effect\nValue: 0x10000000",
+    "text": "CATEGORY_NEGATE"
+  },
+  {
+    "description": "Used as a property when Fusion Summoning (?)\nValue: 351",
+    "text": "EFFECT_CHANGE_FUSION_ATTRIBUTE"
+  },
+  {
+    "description": "The cost of Counter Traps of discarding is replaced (Ariadne, Liberation)\nValue: 338",
+    "text": "EFFECT_DISCARD_COST_CHANGE"
+  },
+  {
+    "description": "Adds a cost for Normal Summoning\nValue: 91",
+    "text": "EFFECT_SUMMON_COST"
+  },
+  {
+    "description": "Face-down\nValue: 0xa",
+    "text": "POS_FACEDOWN"
+  },
+  {
+    "description": "Wyrm\nValue: 0x800000",
+    "text": "RACE_WYRM"
+  },
+  {
+    "description": "Reflects battle damage to your opponent (your opponent takes battle damage you would take)\nValue: 202",
+    "text": "EFFECT_REFLECT_BATTLE_DAMAGE"
+  },
+  {
+    "description": "Must attack X\nValue: 344",
+    "text": "EFFECT_MUST_ATTACK_MONSTER"
+  },
+  {
+    "description": "Affects face-down cards as well (?)\nValue: 0x0100",
+    "text": "EFFECT_FLAG_SET_AVAILABLE"
+  },
+  {
+    "description": "Machine\nValue: 0x20",
+    "text": "RACE_MACHINE"
+  },
+  {
+    "description": "Value: 2",
+    "text": "HINT_MESSAGE"
+  },
+  {
+    "description": "Prevents direct attacking\nValue: 73",
+    "text": "EFFECT_CANNOT_DIRECT_ATTACK"
+  },
+  {
+    "description": "Chain column\nValue: 0x20",
+    "text": "CHAININFO_TRIGGERING_SEQUENCE"
+  },
+  {
+    "description": "Effect will be negated\nValue: 0x0004",
+    "text": "STATUS_TO_DISABLE"
+  },
+  {
+    "description": "Had its attack negated\nValue: 0x200000",
+    "text": "STATUS_ATTACK_CANCELED"
+  },
+  {
+    "description": "Ritual Monster\nValue: 0x80",
+    "text": "TYPE_RITUAL"
+  },
+  {
+    "description": "Choose a card to be sent to the GY\nValue: 504",
+    "text": "HINTMSG_TOGRAVE"
+  },
+  {
+    "description": "Special Summon Monster\nValue: 0x2000000",
+    "text": "TYPE_SPSUMMON"
+  },
+  {
+    "description": "Changes damage value\nValue: 82",
+    "text": "EFFECT_CHANGE_DAMAGE"
+  },
+  {
+    "description": "Choose an Attribute\nValue: 562",
+    "text": "HINTMSG_ATTRIBUTE"
+  },
+  {
+    "description": "Choose a card to add to the hand\nValue: 506",
+    "text": "HINTMSG_ATOHAND"
+  },
+  {
+    "description": "After a card is equipped\nValue: 0x2000000",
+    "text": "TIMING_EQUIP"
+  },
+  {
+    "description": "Main Phase 1 (MP1)\nValue: 0x04",
+    "text": "PHASE_MAIN1"
+  },
+  {
+    "description": "Value: 8",
+    "text": "ASSUME_DEFENSE"
+  },
+  {
+    "description": "Optional trigger effect\nValue: 0x0080",
+    "text": "EFFECT_TYPE_TRIGGER_O"
+  },
+  {
+    "description": "Do not shuffle deck\nValue: 0x10",
+    "text": "DUEL_PSEUDO_SHUFFLE"
+  },
+  {
+    "description": "EARTH\nValue: 0x01",
+    "text": "ATTRIBUTE_EARTH"
+  },
+  {
+    "description": "Effect negation immunity (?)\nValue: 13",
+    "text": "EFFECT_CANNOT_DISEFFECT"
+  },
+  {
+    "description": "Treat Level as Rank (?)\nValue: 408",
+    "text": "EFFECT_LEVEL_RANK"
+  },
+  {
+    "description": "Choose a monster in Attack Position\nValue: 516",
+    "text": "HINTMSG_ATTACK"
+  },
+  {
+    "description": "Sets new Level value\nValue: 131",
+    "text": "EFFECT_CHANGE_LEVEL"
+  },
+  {
+    "description": "Changes monster Battle Position\nValue: 140",
+    "text": "EFFECT_SET_POSITION"
+  },
+  {
+    "description": "Equip Spell Card\nValue: 0x40000",
+    "text": "TYPE_EQUIP"
+  },
+  {
+    "description": "Effect resets at the end of a phase\nValue: 0x40000000",
+    "text": "RESET_PHASE"
+  },
+  {
+    "description": "Prevents effect target\nValue: 71",
+    "text": "EFFECT_CANNOT_BE_EFFECT_TARGET"
+  },
+  {
+    "description": "\"This effect can only be used once while this card is face-up on the field\"\nValue: 0x400000",
+    "text": "EFFECT_FLAG_NO_TURN_RESET"
+  },
+  {
+    "description": "Had its activation negated\nValue: 0x40000",
+    "text": "STATUS_ACTIVATE_DISABLED"
+  },
+  {
+    "description": "Adds a Link Marker\nValue: 423",
+    "text": "EFFECT_ADD_LINKMARKER"
+  },
+  {
+    "description": "\"If a Monster would be Set, it must be Normal Summoned in face-up Defense Position\"\nValue: 38",
+    "text": "EFFECT_DEVINE_LIGHT"
+  },
+  {
+    "description": "\"Neo-Spacian Twinkle Moss\"\nValue: 13857930",
+    "text": "CARD_TWINKLE_MOSS"
+  },
+  {
+    "description": "DARK\nValue: 0x20",
+    "text": "ATTRIBUTE_DARK"
+  },
+  {
+    "description": "At the beginning of the Damage Step\nValue: 1134",
+    "text": "EVENT_PRE_DAMAGE_CALCULATE"
+  },
+  {
+    "description": "When flipping\nValue: 1001",
+    "text": "EVENT_FLIP"
+  },
+  {
+    "description": "Choose the materials for the Fusion Summon\nValue: 511",
+    "text": "HINTMSG_FMATERIAL"
+  },
+  {
+    "description": "Value: 0x40000005",
+    "text": "OPCODE_OR"
+  },
+  {
+    "description": "Sent by battle\nValue: 0x20",
+    "text": "REASON_BATTLE"
+  },
+  {
+    "description": "Chain effect\nValue: 0x02",
+    "text": "CHAININFO_TRIGGERING_EFFECT"
+  },
+  {
+    "description": "Limits amount of Monster Zones used\nValue: 263",
+    "text": "EFFECT_MAX_MZONE"
+  },
+  {
+    "description": "Creator God\nValue: 0x400000",
+    "text": "RACE_CREATORGOD"
+  },
+  {
+    "description": "Skip Main Phase 2 (M2)\nValue: 184",
+    "text": "EFFECT_SKIP_M2"
+  },
+  {
+    "description": "Replaces a Fusion Material\nValue: 234",
+    "text": "EFFECT_FUSION_SUBSTITUTE"
+  },
+  {
+    "description": "Choose a face-up card\nValue: 514",
+    "text": "HINTMSG_FACEUP"
+  },
+  {
+    "description": "\"Neo-Spacian Marine Dolphin\"\nValue: 78734254",
+    "text": "CARD_MARINE_DOLPHIN"
+  },
+  {
+    "description": "(?)\nValue: 0x8",
+    "text": "ANNOUNCE_CARD_FILTER"
+  },
+  {
+    "description": "Declare card name\nValue: 0x7",
+    "text": "ANNOUNCE_CARD"
+  },
+  {
+    "description": "Card can be treated as non-Tuner\nValue: 244",
+    "text": "EFFECT_NONTUNER"
+  },
+  {
+    "description": "(?)\nValue: 5",
+    "text": "ACTIVITY_ATTACK"
+  },
+  {
+    "description": "Cyberse\nValue: 0x1000000",
+    "text": "RACE_CYBERSE"
+  },
+  {
+    "description": "(?)\nValue: 4",
+    "text": "ACTIVITY_FLIPSUMMON"
+  },
+  {
+    "description": "At the beginning of Battle Step (before flipping)\nValue: 1132",
+    "text": "EVENT_BATTLE_START"
+  },
+  {
+    "description": "Divine Beast\nValue: 0x200000",
+    "text": "RACE_DEVINE"
+  },
+  {
+    "description": "When a monster is Flip Summoned\nValue: 1101",
+    "text": "EVENT_FLIP_SUMMON_SUCCESS"
+  },
+  {
+    "description": "(?)\nValue: 2",
+    "text": "ACTIVITY_NORMALSUMMON"
+  },
+  {
+    "description": "(?)\nValue: 1",
+    "text": "ACTIVITY_SUMMON"
+  },
+  {
+    "description": "Prevents attack declaration\nValue: 86",
+    "text": "EFFECT_CANNOT_ATTACK_ANNOUNCE"
+  },
+  {
+    "description": "For costs like \"you cannot conduct you BP\"\nValue: 0x80000",
+    "text": "EFFECT_FLAG_OATH"
+  },
+  {
+    "description": "Effect can be activated during the damage step\nValue: 0x4000",
+    "text": "EFFECT_FLAG_DAMAGE_STEP"
+  },
+  {
+    "description": "Doubles PP (?)\nValue: 0x20",
+    "text": "DUEL_TAG_MODE"
+  },
+  {
+    "description": "Use old rulings\nValue: 0x08",
+    "text": "DUEL_OBSOLETE_RULING"
+  },
+  {
+    "description": "Was destroyed by battle\nValue: 0x4000",
+    "text": "STATUS_BATTLE_DESTROYED"
+  },
+  {
+    "description": "(?)\nValue: 0x04",
+    "text": "DUEL_NO_CHAIN_HINT"
+  },
+  {
+    "description": "Negation effect\nValue: 0x4000",
+    "text": "CATEGORY_DISABLE"
+  },
+  {
+    "description": "Cannot be changed to Defense Position by a card effect\nValue: 87",
+    "text": "EFFECT_CANNOT_CHANGE_POS_E"
+  },
+  {
+    "description": "Test mode (currently not available)\nValue: 0x01",
+    "text": "DUEL_TEST_MODE"
+  },
+  {
+    "description": "When a player gains LP\nValue: 1112",
+    "text": "EVENT_RECOVER"
+  },
+  {
+    "description": "After LP is gained\nValue: 0x40000",
+    "text": "TIMING_RECOVER"
+  },
+  {
+    "description": "Flip Monster\nValue: 0x200000",
+    "text": "TYPE_FLIP"
+  },
+  {
+    "description": "Choose a Level/Rank\nValue: 567",
+    "text": "HINGMSG_LVRANK"
+  },
+  {
+    "description": "Value: 0x40000003",
+    "text": "OPCODE_DIV"
+  },
+  {
+    "description": "Transforms DEF value (increases/decreases)\nValue: 104",
+    "text": "EFFECT_UPDATE_DEFENSE"
+  },
+  {
+    "description": "Effect resets when the card is temporarily banished\nValue: 0x00100000",
+    "text": "RESET_TEMP_REMOVE"
+  },
+  {
+    "description": "Card remains on the field for X turns\nValue: 17",
+    "text": "EFFECT_REMAIN_FIELD"
+  },
+  {
+    "description": "Do not enter the chain to send grave inspection (EFFECT_SELF_TOGRAVE) (?)\nValue: 0x100",
+    "text": "GLOBALFLAG_SELF_TOGRAVE"
+  },
+  {
+    "description": "Banish effect\nValue: 0x4",
+    "text": "CATEGORY_REMOVE"
+  },
+  {
+    "description": "Must be used as a Synchro Material flag (?)\nValue: 0x20",
+    "text": "GLOBALFLAG_MUST_BE_SMATERIAL"
+  },
+  {
+    "description": "EVENT_DETACH_MATERIAL\nValue: 0x10",
+    "text": "GLOBALFLAG_DETACH_EVENT"
+  },
+  {
+    "description": "4 digit, by DataManager::GetDesc()\nValue: 1000",
+    "text": "MIN_ID"
+  },
+  {
+    "description": "Scrap Chimera flag\nValue: 0x4",
+    "text": "GLOBALFLAG_SCRAP_CHIMERA"
+  },
+  {
+    "description": "Activation of Trap in the turn it is Set\nValue: 16",
+    "text": "EFFECT_TRAP_ACT_IN_SET_TURN"
+  },
+  {
+    "description": "Monsters change (?) + End Phase\nValue: 0x1e0",
+    "text": "TIMINGS_CHECK_MONSTER_E"
+  },
+  {
+    "description": "Replaces the detachment of an Xyz Material\nValue: 245",
+    "text": "EFFECT_OVERLAY_REMOVE_REPLACE"
+  },
+  {
+    "description": "When a monster is destroyed by battle and sent to the GY\nValue: 1140",
+    "text": "EVENT_BATTLE_DESTROYED"
+  },
+  {
+    "description": "At the end of the Battle Step\nValue: 0x4000000",
+    "text": "TIMING_BATTLE_STEP_END"
+  },
+  {
+    "description": "Standby Phase (SP)\nValue: 0x02",
+    "text": "PHASE_STANDBY"
+  },
+  {
+    "description": "At the Battle Phase\nValue: 0x1000000",
+    "text": "TIMING_BATTLE_PHASE"
+  },
+  {
+    "description": "After a card is sent to Deck\nValue: 0x400000",
+    "text": "TIMING_TODECK"
+  },
+  {
+    "description": "After a card is added to the hand\nValue: 0x200000",
+    "text": "TIMING_TOHAND"
+  },
+  {
+    "description": "Value: 0x40000101",
+    "text": "OPCODE_ISSETCARD"
+  },
+  {
+    "description": "Increases/decreases Level\nValue: 130",
+    "text": "EFFECT_UPDATE_LEVEL"
+  },
+  {
+    "description": "Flip Summon negation immunity\nValue: 39",
+    "text": "EFFECT_CANNOT_DISABLE_FLIP_SUMMON"
+  },
+  {
+    "description": "Chain type\nValue: 0x1000",
+    "text": "CHAININFO_TYPE"
+  },
+  {
+    "description": "After a card is banished\nValue: 0x100000",
+    "text": "TIMING_REMOVE"
+  },
+  {
+    "description": "Destruction confirmed\nValue: 0x1000",
+    "text": "STATUS_DESTROY_CONFIRMED"
+  },
+  {
+    "description": "Main Phase 2 (MP2)\nValue: 0x100",
+    "text": "PHASE_MAIN2"
+  },
+  {
+    "description": "Card cannot be used\nValue: 57",
+    "text": "EFFECT_CANNOT_USE_AS_COST"
+  },
+  {
+    "description": "After a card destruction\nValue: 0x80000",
+    "text": "TIMING_DESTROY"
+  },
+  {
+    "description": "After damage is inflicted\nValue: 0x20000",
+    "text": "TIMING_DAMAGE"
+  },
+  {
+    "description": "Copying effect from another card\nValue: 0x8000",
+    "text": "STATUS_COPYING_EFFECT"
+  },
+  {
+    "description": "Aqua\nValue: 0x40",
+    "text": "RACE_AQUA"
+  },
+  {
+    "description": "Equip effect\nValue: 0x40000",
+    "text": "CATEGORY_EQUIP"
+  },
+  {
+    "description": "Value: 1",
+    "text": "ASSUME_CODE"
+  },
+  {
+    "description": "At the damage step\nValue: 0x2000",
+    "text": "TIMING_DAMAGE_STEP"
+  },
+  {
+    "description": "Was drawn\nValue: 0x2000000",
+    "text": "REASON_DRAW"
+  },
+  {
+    "description": "(?)\nValue: 0x20000000",
+    "text": "EFFECT_FLAG_COF"
+  },
+  {
+    "description": "Expected to be destroyed after damage calculation\nValue: 0x0040",
+    "text": "STATUS_BATTLE_RESULT"
+  },
+  {
+    "description": "Choose a Battle Position\nValue: 561",
+    "text": "HINTMSG_POSITION"
+  },
+  {
+    "description": "Not available in custom counter\nValue: 6",
+    "text": "ACTIVITY_BATTLE_PHASE"
+  },
+  {
+    "description": "After position is changed\nValue: 0x800",
+    "text": "TIMING_POS_CHANGE"
+  },
+  {
+    "description": "After a Spell/Trap is Set\nValue: 0x400",
+    "text": "TIMING_SSET"
+  },
+  {
+    "description": "When a counter is placed\nValue: 0x10000",
+    "text": "EVENT_ADD_COUNTER"
+  },
+  {
+    "description": "Disables drawing cards\nValue: 25",
+    "text": "EFFECT_CANNOT_DRAW"
+  },
+  {
+    "description": "After a Special Summon\nValue: 0x80",
+    "text": "TIMING_SPSUMMON"
+  },
+  {
+    "description": "Choose a card to be Special Summoned\nValue: 509",
+    "text": "HINTMSG_SPSUMMON"
+  },
+  {
+    "description": "Sent by being Tributed\nValue: 0x2",
+    "text": "REASON_RELEASE"
+  },
+  {
+    "description": "Value: 4",
+    "text": "HINT_OPSELECTED"
+  },
+  {
+    "description": "Adds a cost for Setting a monster\nValue: 94",
+    "text": "EFFECT_MSET_COST"
+  },
+  {
+    "description": "At the start of the Battle Phase\nValue: 0x8",
+    "text": "TIMING_BATTLE_START"
+  },
+  {
+    "description": "At the end of Main Phase\nValue: 0x4",
+    "text": "TIMING_MAIN_END"
+  },
+  {
+    "description": "Player's Special Summon limit flag (?)\nValue: 0x40",
+    "text": "GLOBALFLAG_SPSUMMON_COUNT"
+  },
+  {
+    "description": "Value: 4",
+    "text": "ASSUME_RANK"
+  },
+  {
+    "description": "Normal Spell Card activated outside of MP (?)\nValue: 0x0002",
+    "text": "EFFECT_FLAG2_COF"
+  },
+  {
+    "description": "Effect immunity\nValue: 1",
+    "text": "EFFECT_IMMUNE_EFFECT"
+  },
+  {
+    "description": "Sent by a rule\nValue: 0x400",
+    "text": "REASON_RULE"
+  },
+  {
+    "description": "At the Draw Phase\nValue: 0x1",
+    "text": "TIMING_DRAW_PHASE"
+  },
+  {
+    "description": "Ritual Summoned\nValue: 0x45000000",
+    "text": "SUMMON_TYPE_RITUAL"
+  },
+  {
+    "description": "Treats battle damage as effect damage\nValue: 205",
+    "text": "EFFECT_BATTLE_DAMAGE_TO_EFFECT"
+  },
+  {
+    "description": "Tails\nValue: 61",
+    "text": "SELECT_TAILS"
+  },
+  {
+    "description": "Value: 2",
+    "text": "CHINT_CARD"
+  },
+  {
+    "description": "Heads\nValue: 60",
+    "text": "SELECT_HEADS"
+  },
+  {
+    "description": "Chain target (as specified in the effect's `target` function)\nValue: 0x40",
+    "text": "CHAININFO_TARGET_CARDS"
+  },
+  {
+    "description": "The number of activations is limited (?)\nValue: 0x10000000",
+    "text": "EFFECT_COUNT_CODE_OATH"
+  },
+  {
+    "description": "Effect cannot be activated multiple times in the same chains\nValue: 0x8000000",
+    "text": "EFFECT_FLAG_CHAIN_UNIQUE"
+  },
+  {
+    "description": "Value: 0x40000102",
+    "text": "OPCODE_ISTYPE"
+  },
+  {
+    "description": "When a Spell/Trap is Set\nValue: 1107",
+    "text": "EVENT_SSET"
+  },
+  {
+    "description": "Monster Zones\nValue: 0x04",
+    "text": "LOCATION_MZONE"
+  },
+  {
+    "description": "Redirects cards going to the hand\nValue: 61",
+    "text": "EFFECT_TO_HAND_REDIRECT"
+  },
+  {
+    "description": "Card cannot be used as Xyz Material\nValue: 238",
+    "text": "EFFECT_CANNOT_BE_XYZ_MATERIAL"
+  },
+  {
+    "description": "Choose\nValue: 560",
+    "text": "HINTMSG_SELECT"
+  },
+  {
+    "description": "Special Summoned\nValue: 0x40000000",
+    "text": "SUMMON_TYPE_SPECIAL"
+  },
+  {
+    "description": "Choose a dice result\nValue: 553",
+    "text": "HINTMSG_DICE"
+  },
+  {
+    "description": "When a card is sent to GY (except when returned)\nValue: 1014",
+    "text": "EVENT_TO_GRAVE"
+  },
+  {
+    "description": "Choose an effect target\nValue: 551",
+    "text": "HINTMSG_TARGET"
+  },
+  {
+    "description": "Forced quick effect\nValue: 0x0400",
+    "text": "EFFECT_TYPE_QUICK_F"
+  },
+  {
+    "description": "Choose a face-down Attack Position monster\nValue: 524",
+    "text": "HINTMSG_FACEDOWNATTACK"
+  },
+  {
+    "description": "Replaces an LP cost with other actions\nValue: 171",
+    "text": "EFFECT_LPCOST_REPLACE"
+  },
+  {
+    "description": "Choose an attack target\nValue: 549",
+    "text": "HINTMSG_ATTACKTARGET"
+  },
+  {
+    "description": "Prevents discarding from hand\nValue: 55",
+    "text": "EFFECT_CANNOT_DISCARD_HAND"
+  },
+  {
+    "description": "Makes Gemini monster become Effect Monsters with their effects\nValue: 75",
+    "text": "EFFECT_DUAL_STATUS"
+  },
+  {
+    "description": "Choose a card to change position\nValue: 528",
+    "text": "HINTMSG_POSCHANGE"
+  },
+  {
+    "description": "Choose a card to be placed on field\nValue: 527",
+    "text": "HINTMSG_TOFIELD"
+  },
+  {
+    "description": "Is equipped as Union\nValue: 0x100000",
+    "text": "STATUS_UNION"
+  },
+  {
+    "description": "Choose a face-down Defense Position monster\nValue: 525",
+    "text": "HINTMSG_FACEDOWNDEFENSE"
+  },
+  {
+    "description": "Value: 9",
+    "text": "HINT_NUMBER"
+  },
+  {
+    "description": "Disables Setting Spell/Traps\nValue: 24",
+    "text": "EFFECT_CANNOT_SSET"
+  },
+  {
+    "description": "Choose a face-up Defense Position monster\nValue: 523",
+    "text": "HINTMSG_FACEUPDEFENSE"
+  },
+  {
+    "description": "Choose a card to replace destruction\nValue: 521",
+    "text": "HINTMSG_DESREPLACE"
+  },
+  {
+    "description": "Choose a monstrol to change control\nValue: 520",
+    "text": "HINTMSG_CONTROL"
+  },
+  {
+    "description": "Choose an Xyz Material to detach\nValue: 519",
+    "text": "HINTMSG_REMOVEXYZ"
+  },
+  {
+    "description": "Value: 7",
+    "text": "HINT_ATTRIB"
+  },
+  {
+    "description": "Choose a face-down card\nValue: 515",
+    "text": "HINTMSG_FACEDOWN"
+  },
+  {
+    "description": "Choose a number\nValue: 565",
+    "text": "HINGMSG_NUMBER"
+  },
+  {
+    "description": "Special Summoned this turn\nValue: 0x40000000",
+    "text": "STATUS_SPSUMMON_TURN"
+  },
+  {
+    "description": "Value: 0x40000007",
+    "text": "OPCODE_NOT"
+  },
+  {
+    "description": "Choose a card to be Set\nValue: 510",
+    "text": "HINTMSG_SET"
+  },
+  {
+    "description": "Choose a card to be Normal Summoned\nValue: 508",
+    "text": "HINTMSG_SUMMON"
+  },
+  {
+    "description": "Choose a card to return to Deck\nValue: 507",
+    "text": "HINTMSG_TODECK"
+  },
+  {
+    "description": "Triggered while equipped\nValue: 0x0004",
+    "text": "EFFECT_TYPE_EQUIP"
+  },
+  {
+    "description": "Effect resets when the chain ends\nValue: 0x80000000",
+    "text": "RESET_CHAIN"
+  },
+  {
+    "description": "Prevents adding cards to hand\nValue: 65",
+    "text": "EFFECT_CANNOT_TO_HAND"
+  },
+  {
+    "description": "Choose a card to return to the hand\nValue: 505",
+    "text": "HINTMSG_RTOHAND"
+  },
+  {
+    "description": "Used by Card.IsControlerCanBeChanged() (?)\nValue: 0x2",
+    "text": "LOCATION_REASON_CONTROL"
+  },
+  {
+    "description": "Set the final DEF (for exchange) (?)\nValue: 112",
+    "text": "EFFECT_SWAP_DEFENSE_FINAL"
+  },
+  {
+    "description": "Sent temporarily\nValue: 0x4",
+    "text": "REASON_TEMPORARY"
+  },
+  {
+    "description": "Choose a card to be banished\nValue: 503",
+    "text": "HINTMSG_REMOVE"
+  },
+  {
+    "description": "Prevents adding cards to Deck\nValue: 66",
+    "text": "EFFECT_CANNOT_TO_DECK"
+  },
+  {
+    "description": "Choose a card to be destroyed\nValue: 502",
+    "text": "HINTMSG_DESTROY"
+  },
+  {
+    "description": "LIGHT\nValue: 0x10",
+    "text": "ATTRIBUTE_LIGHT"
+  },
+  {
+    "description": "Choose a card to be discarded\nValue: 501",
+    "text": "HINTMSG_DISCARD"
+  },
+  {
+    "description": "Choose a card to be Tributed\nValue: 500",
+    "text": "HINTMSG_RELEASE"
+  },
+  {
+    "description": "End of Battle Phase (BP)\nValue: 0x80",
+    "text": "PHASE_BATTLE"
+  },
+  {
+    "description": "Value: 0x40000104",
+    "text": "OPCODE_ISATTRIBUTE"
+  },
+  {
+    "description": "Sent because lost its target (e.g. lost the card that was equipped)\nValue: 0x200",
+    "text": "REASON_LOST_TARGET"
+  },
+  {
+    "description": "When a card leaves the field\nValue: 1015",
+    "text": "EVENT_LEAVE_FIELD"
+  },
+  {
+    "description": "Client prompt (?)\nValue: 0x4000000",
+    "text": "EFFECT_FLAG_CLIENT_HINT"
+  },
+  {
+    "description": "Choose a card name\nValue: 564",
+    "text": "HINTMSG_CODE"
+  },
+  {
+    "description": "Value: 0x40000100",
+    "text": "OPCODE_ISCODE"
+  },
+  {
+    "description": "Choose the materials for the Synchro Summon\nValue: 512",
+    "text": "HINTMSG_SMATERIAL"
+  },
+  {
+    "description": "Adds a type (card type)\nValue: 115",
+    "text": "EFFECT_ADD_TYPE"
+  },
+  {
+    "description": "Value: 0x40000006",
+    "text": "OPCODE_NEG"
+  },
+  {
+    "description": "Value: 5",
+    "text": "ASSUME_ATTRIBUTE"
+  },
+  {
+    "description": "Value: 0x40000004",
+    "text": "OPCODE_AND"
+  },
+  {
+    "description": "Card must be Tributed (as in Soul Exchange)\nValue: 153",
+    "text": "EFFECT_EXTRA_RELEASE"
+  },
+  {
+    "description": "When a card is used as material\nValue: 1108",
+    "text": "EVENT_BE_MATERIAL"
+  },
+  {
+    "description": "Effect resets when the card goes to the field\nValue: 0x01000000",
+    "text": "RESET_TOFIELD"
+  },
+  {
+    "description": "Sent by having its Summon negated\nValue: 0x1000",
+    "text": "REASON_DISSUMMON"
+  },
+  {
+    "description": "Allows attacking in Defense Position\nValue: 190",
+    "text": "EFFECT_DEFENSE_ATTACK"
+  },
+  {
+    "description": "(?)\nValue: 0x400",
+    "text": "GLOBALFLAG_TUNE_MAGICIAN"
+  },
+  {
+    "description": "When a card has its Battle Position changed\nValue: 1016",
+    "text": "EVENT_CHANGE_POS"
+  },
+  {
+    "description": "Increases the number of Normal Summons in a turn\nValue: 29",
+    "text": "EFFECT_EXTRA_SUMMON_COUNT"
+  },
+  {
+    "description": "Plant\nValue: 0x400",
+    "text": "RACE_PLANT"
+  },
+  {
+    "description": "Face-up Attack Position\nValue: 0x1",
+    "text": "POS_FACEUP_ATTACK"
+  },
+  {
+    "description": "When a player takes damage\nValue: 1111",
+    "text": "EVENT_DAMAGE"
+  },
+  {
+    "description": "Value: 0x40000001",
+    "text": "OPCODE_SUB"
+  },
+  {
+    "description": "Value: 0x40000000",
+    "text": "OPCODE_ADD"
+  },
+  {
+    "description": "Search effect\nValue: 0x20000",
+    "text": "CATEGORY_SEARCH"
+  },
+  {
+    "description": "Prevents the opponent from targeting for attack\nValue: 332",
+    "text": "EFFECT_CANNOT_SELECT_BATTLE_TARGET"
+  },
+  {
+    "description": "Value: 5",
+    "text": "CHINT_NUMBER"
+  },
+  {
+    "description": "Value: 4",
+    "text": "CHINT_ATTRIBUTE"
+  },
+  {
+    "description": "Synchro Monster\nValue: 0x2000",
+    "text": "TYPE_SYNCHRO"
+  },
+  {
+    "description": "Value: 3",
+    "text": "CHINT_RACE"
+  },
+  {
+    "description": "Changes the amount of cards to be drawn at Draw Phase\nValue: 271",
+    "text": "EFFECT_DRAW_COUNT"
+  },
+  {
+    "description": "Reset Owner to the effect of the specified card (?)\nValue: 0x2000",
+    "text": "RESET_CARD"
+  },
+  {
+    "description": "Send to hand effect\nValue: 0x8",
+    "text": "CATEGORY_TOHAND"
+  },
+  {
+    "description": "Choose a monster in Defense Position\nValue: 517",
+    "text": "HINTMSG_DEFENSE"
+  },
+  {
+    "description": "Was revealed\nValue: 0x8000000",
+    "text": "REASON_REVEAL"
+  },
+  {
+    "description": "Effect resets when the card leaves the field/becomes Xyz Material\nValue: 0x00800000",
+    "text": "RESET_LEAVE"
+  },
+  {
+    "description": "Extra Deck\nValue: 0x40",
+    "text": "LOCATION_EXTRA"
+  },
+  {
+    "description": "Sent as cost\nValue: 0x80",
+    "text": "REASON_COST"
+  },
+  {
+    "description": "Prevents the card from being Tributed, except for Tribute Summon\nValue: 44",
+    "text": "EFFECT_UNRELEASABLE_NONSUM"
+  },
+  {
+    "description": "Normal Summoned\nValue: 0x10000000",
+    "text": "SUMMON_TYPE_NORMAL"
+  },
+  {
+    "description": "Send to GY effect\nValue: 0x20",
+    "text": "CATEGORY_TOGRAVE"
+  },
+  {
+    "description": "After a Normal Summon\nValue: 0x40",
+    "text": "TIMING_SUMMON"
+  },
+  {
+    "description": "Normal Summoned again (Gemini)\nValue: 0x12000000",
+    "text": "SUMMON_TYPE_DUAL"
+  },
+  {
+    "description": "Flip Summoned\nValue: 0x20000000",
+    "text": "SUMMON_TYPE_FLIP"
+  },
+  {
+    "description": "Fusion Summon effect\nValue: 0x40000000",
+    "text": "CATEGORY_FUSION_SUMMON"
+  },
+  {
+    "description": "Declare card name effect\nValue: 0x20000000",
+    "text": "CATEGORY_ANNOUNCE"
+  },
+  {
+    "description": "Dice roll effect\nValue: 0x2000000",
+    "text": "CATEGORY_DICE"
+  },
+  {
+    "description": "Place/remove counter effect\nValue: 0x800000",
+    "text": "CATEGORY_COUNTER"
+  },
+  {
+    "description": "Card can be used as Fusion Material with another archetype\nValue: 341",
+    "text": "EFFECT_ADD_FUSION_SETCODE"
+  },
+  {
+    "description": "Effect negation\nValue: 2",
+    "text": "EFFECT_DISABLE"
+  },
+  {
+    "description": "When a monster is Normal Summoned\nValue: 1100",
+    "text": "EVENT_SUMMON_SUCCESS"
+  },
+  {
+    "description": "DEF change effect\nValue: 0x400000",
+    "text": "CATEGORY_DEFCHANGE"
+  },
+  {
+    "description": "Start of Battle Phase (BP)\nValue: 0x08",
+    "text": "PHASE_BATTLE_START"
+  },
+  {
+    "description": "Effect might affect all zones\nValue: 0x0020",
+    "text": "EFFECT_FLAG_IGNORE_RANGE"
+  },
+  {
+    "description": "Attack cannot be negated\nValue: 404",
+    "text": "EFFECT_UNSTOPPABLE_ATTACK"
+  },
+  {
+    "description": "Draw effect\nValue: 0x10000",
+    "text": "CATEGORY_DRAW"
+  },
+  {
+    "description": "The first round can attack (for the endgame) (?)\nValue: 0x02",
+    "text": "DUEL_ATTACK_FIRST_TURN"
+  },
+  {
+    "description": "Redirect to the deck and shuffle it\nValue: 0x20001",
+    "text": "LOCATION_DECKSHF"
+  },
+  {
+    "description": "Skip Main Phase 1 (M1)\nValue: 182",
+    "text": "EFFECT_SKIP_M1"
+  },
+  {
+    "description": "Normal Summon mandatory procedure\nValue: 33",
+    "text": "EFFECT_LIMIT_SUMMON_PROC"
+  },
+  {
+    "description": "Makes a Zone become Linked\nValue: 265",
+    "text": "EFFECT_BECOME_LINKED_ZONE"
+  },
+  {
+    "description": "Can be used as an Xyz Material\nValue: 233",
+    "text": "EFFECT_XYZ_MATERIAL"
+  },
+  {
+    "description": "Token Special Summon effect\nValue: 0x400",
+    "text": "CATEGORY_TOKEN"
+  },
+  {
+    "description": "Special Summon effect\nValue: 0x200",
+    "text": "CATEGORY_SPECIAL_SUMMON"
+  },
+  {
+    "description": "Adds a cost for Setting a Spell/Trap\nValue: 95",
+    "text": "EFFECT_SSET_COST"
+  },
+  {
+    "description": "Can be activated\nValue: 0x0001",
+    "text": "EFFECT_FLAG_INITIAL"
+  },
+  {
+    "description": "Normal Summon effect\nValue: 0x100",
+    "text": "CATEGORY_SUMMON"
+  },
+  {
+    "description": "During damage calculation (?)\nValue: 1135",
+    "text": "EVENT_DAMAGE_CALCULATING"
+  },
+  {
+    "description": "Effect of Scrap Chimera (?)\nValue: 246",
+    "text": "EFFECT_SCRAP_CHIMERA"
+  },
+  {
+    "description": "Value: 8",
+    "text": "HINT_CODE"
+  },
+  {
+    "description": "At the Standby Phase\nValue: 0x2",
+    "text": "TIMING_STANDBY_PHASE"
+  },
+  {
+    "description": "Beast Warrior\nValue: 0x8000",
+    "text": "RACE_BEASTWARRIOR"
+  },
+  {
+    "description": "At the end of Battle Step (after flipping)\nValue: 1133",
+    "text": "EVENT_BATTLE_CONFIRM"
+  },
+  {
+    "description": "Tribute effect\nValue: 0x2",
+    "text": "CATEGORY_RELEASE"
+  },
+  {
+    "description": "Set alternative procedure\nValue: 36",
+    "text": "EFFECT_SET_PROC"
+  },
+  {
+    "description": "Negated effect\nValue: 0x0001",
+    "text": "STATUS_DISABLED"
+  },
+  {
+    "description": "Prevents banishing\nValue: 67",
+    "text": "EFFECT_CANNOT_REMOVE"
+  },
+  {
+    "description": "When a counter is removed\nValue: 0x20000",
+    "text": "EVENT_REMOVE_COUNTER"
+  },
+  {
+    "description": "After a Flip Summon\nValue: 0x100",
+    "text": "TIMING_FLIPSUMMON"
+  },
+  {
+    "description": "When a phase ends\nValue: 0x1000",
+    "text": "EVENT_PHASE"
+  },
+  {
+    "description": "Sent to replace another card's destruction\nValue: 0x1000000",
+    "text": "REASON_REPLACE"
+  },
+  {
+    "description": "Battle destruction immunity\nValue: 42",
+    "text": "EFFECT_INDESTRUCTABLE_BATTLE"
+  },
+  {
+    "description": "When a card is returned to the GY\nValue: 1203",
+    "text": "EVENT_RETURN_TO_GRAVE"
+  },
+  {
+    "description": "Had its summon negated\nValue: 0x20000",
+    "text": "STATUS_SUMMON_DISABLED"
+  },
+  {
+    "description": "Chain location\nValue: 0x10",
+    "text": "CHAININFO_TRIGGERING_LOCATION"
+  },
+  {
+    "description": "When an Xyz Material is detached\nValue: 1202",
+    "text": "EVENT_DETACH_MATERIAL"
+  },
+  {
+    "description": "Disables a Zone for use\nValue: 260",
+    "text": "EFFECT_DISABLE_FIELD"
+  },
+  {
+    "description": "When LP is paid\nValue: 1201",
+    "text": "EVENT_PAY_LPCOST"
+  },
+  {
+    "description": "When the Level of a monster is increased\nValue: 1200",
+    "text": "EVENT_LEVEL_UP"
+  },
+  {
+    "description": "Graveyard\nValue: 0x10",
+    "text": "LOCATION_GRAVE"
+  },
+  {
+    "description": "Re-tossing coin (?)\nValue: 1153",
+    "text": "EVENT_TOSS_DICE_NEGATE"
+  },
+  {
+    "description": "WIND\nValue: 0x08",
+    "text": "ATTRIBUTE_WIND"
+  },
+  {
+    "description": "Re-rolling dice (?)\nValue: 1152",
+    "text": "EVENT_TOSS_COIN_NEGATE"
+  },
+  {
+    "description": "Cannot enter End Phase\nValue: 187",
+    "text": "EFFECT_CANNOT_EP"
+  },
+  {
+    "description": "When a coin is tossed\nValue: 1151",
+    "text": "EVENT_TOSS_COIN"
+  },
+  {
+    "description": "Effect resets when the card is banished\nValue: 0x00080000",
+    "text": "RESET_REMOVE"
+  },
+  {
+    "description": "Optional quick effect\nValue: 0x0100",
+    "text": "EFFECT_TYPE_QUICK_O"
+  },
+  {
+    "description": "When battle damage is inflicted\nValue: 1143",
+    "text": "EVENT_BATTLE_DAMAGE"
+  },
+  {
+    "description": "At the end of the Damage Step\nValue: 1141",
+    "text": "EVENT_DAMAGE_STEP_END"
+  },
+  {
+    "description": "When a monster destroys another by battle and sends it to the GY\nValue: 1139",
+    "text": "EVENT_BATTLE_DESTROYING"
+  },
+  {
+    "description": "After damage calculation\nValue: 1138",
+    "text": "EVENT_BATTLED"
+  },
+  {
+    "description": "(?)\nValue: 1137",
+    "text": "EVENT_BATTLE_END"
+  },
+  {
+    "description": "Prevents battle damage to yourself\nValue: 201",
+    "text": "EFFECT_AVOID_BATTLE_DAMAGE"
+  },
+  {
+    "description": "Link Marker\nValue: 0x080",
+    "text": "LINK_MARKER_TOP"
+  },
+  {
+    "description": "Redesignate the destination of cards instead of being sent to GY\nValue: 313",
+    "text": "EFFECT_TO_GRAVE_REDIRECT_CB"
+  },
+  {
+    "description": "Before a card is used as material (?)\nValue: 1109",
+    "text": "EVENT_BE_PRE_MATERIAL"
+  },
+  {
+    "description": "DIVINE\nValue: 0x40",
+    "text": "ATTRIBUTE_DEVINE"
+  },
+  {
+    "description": "Banished\nValue: 0x20",
+    "text": "LOCATION_REMOVED"
+  },
+  {
+    "description": "When a monster becomes a battle target\nValue: 1131",
+    "text": "EVENT_BE_BATTLE_TARGET"
+  },
+  {
+    "description": "When a card is equipped\nValue: 1121",
+    "text": "EVENT_EQUIP"
+  },
+  {
+    "description": "Fiend\nValue: 0x8",
+    "text": "RACE_FIEND"
+  },
+  {
+    "description": "Free chain (can be activated anytime)\nValue: 1002",
+    "text": "EVENT_FREE_CHAIN"
+  },
+  {
+    "description": "Only one out of many effects can be used in the same turn\nValue: 0x1",
+    "text": "EFFECT_COUNT_CODE_SINGLE"
+  },
+  {
+    "description": "When a card is drawn\nValue: 1110",
+    "text": "EVENT_DRAW"
+  },
+  {
+    "description": "Counter that needs permission to be placed\nValue: 0x2000",
+    "text": "COUNTER_NEED_ENABLE"
+  },
+  {
+    "description": "Choose a Type (monster Type/race)\nValue: 563",
+    "text": "HINTMSG_RACE"
+  },
+  {
+    "description": "When a monster is destroyed, before sending to GY\nValue: 1010",
+    "text": "EVENT_DESTROY"
+  },
+  {
+    "description": "Chain target player\nValue: 0x80",
+    "text": "CHAININFO_TARGET_PLAYER"
+  },
+  {
+    "description": "When a monster is Set\nValue: 1106",
+    "text": "EVENT_MSET"
+  },
+  {
+    "description": "When a card is sent to Deck\nValue: 1013",
+    "text": "EVENT_TO_DECK"
+  },
+  {
+    "description": "Sets extra cards for Fusion Material\nValue: 352",
+    "text": "EFFECT_EXTRA_FUSION_MATERIAL"
+  },
+  {
+    "description": "When a monster is Flip Summoned, during Summon negation window\nValue: 1104",
+    "text": "EVENT_FLIP_SUMMON"
+  },
+  {
+    "description": "Replaces destruction\nValue: 45",
+    "text": "EFFECT_DESTROY_SUBSTITUTE"
+  },
+  {
+    "description": "When a monster is Normal Summoned, during Summon negation window\nValue: 1103",
+    "text": "EVENT_SUMMON"
+  },
+  {
+    "description": "When a monster is Special Summoned\nValue: 1102",
+    "text": "EVENT_SPSUMMON_SUCCESS"
+  },
+  {
+    "description": "(?)\nValue: 3",
+    "text": "ACTIVITY_SPSUMMON"
+  },
+  {
+    "description": "When a card is destroyed\nValue: 1029",
+    "text": "EVENT_DESTROYED"
+  },
+  {
+    "description": "When a card is targeted by an effect\nValue: 1028",
+    "text": "EVENT_BECOME_TARGET"
+  },
+  {
+    "description": "Custom event\nValue: 0x10000000",
+    "text": "EVENT_CUSTOM"
+  },
+  {
+    "description": "When the chain activation is negated (after EVENT_CHAIN_ACTIVATING) (?)\nValue: 1024",
+    "text": "EVENT_CHAIN_NEGATED"
+  },
+  {
+    "description": "Forbids a card from being used\nValue: 292",
+    "text": "EFFECT_FORBIDDEN"
+  },
+  {
+    "description": "At the end of the chain processing (?)\nValue: 1022",
+    "text": "EVENT_CHAIN_SOLVED"
+  },
+  {
+    "description": "When a card leaves the field permanently (?)\nValue: 1019",
+    "text": "EVENT_LEAVE_FIELD_P"
+  },
+  {
+    "description": "If it is generated by the effect of copying, it inherits its Reset property\nValue: 0x2000",
+    "text": "EFFECT_FLAG_COPY_INHERIT"
+  },
+  {
+    "description": "When a card is discarded\nValue: 1018",
+    "text": "EVENT_DISCARD"
+  },
+  {
+    "description": "Value: 9",
+    "text": "ASSUME_LINK"
+  },
+  {
+    "description": "Card cannot be used as Fusion Material\nValue: 235",
+    "text": "EFFECT_CANNOT_BE_FUSION_MATERIAL"
+  },
+  {
+    "description": "Value: 0x40000103",
+    "text": "OPCODE_ISRACE"
+  },
+  {
+    "description": "Choose a coin result\nValue: 552",
+    "text": "HINTMSG_COIN"
+  },
+  {
+    "description": "Sets Link Markers\nValue: 425",
+    "text": "EFFECT_CHANGE_LINKMARKER"
+  },
+  {
+    "description": "Value: 10",
+    "text": "HINT_CARD"
+  },
+  {
+    "description": "Increase/decrease Link Rating\nValue: 420",
+    "text": "EFFECT_UPDATE_LINK"
+  },
+  {
+    "description": "Counter Trap Card\nValue: 0x100000",
+    "text": "TYPE_COUNTER"
+  },
+  {
+    "description": "Spell can be activated as a Quick-Play Spell\nValue: 407",
+    "text": "EFFECT_BECOME_QUICK"
+  },
+  {
+    "description": "(?)\nValue: 405",
+    "text": "EFFECT_ALLOW_NEGATIVE"
+  },
+  {
+    "description": "ATK change effect\nValue: 0x200000",
+    "text": "CATEGORY_ATKCHANGE"
+  },
+  {
+    "description": "Battle Step\nValue: 0x10",
+    "text": "PHASE_BATTLE_STEP"
+  },
+  {
+    "description": "Player cannot lose the Duel because of having no cards to draw\nValue: 400",
+    "text": "EFFECT_CANNOT_LOSE_DECK"
+  },
+  {
+    "description": "reserve (?)\nValue: 350",
+    "text": "EFFECT_REMOVE_FUSION_ATTRIBUTE"
+  },
+  {
+    "description": "Chain position\nValue: 0x4000",
+    "text": "CHAININFO_TRIGGERING_POSITION"
+  },
+  {
+    "description": "reserve (?)\nValue: 349",
+    "text": "EFFECT_ADD_FUSION_ATTRIBUTE"
+  },
+  {
+    "description": "Old Union status\nValue: 348",
+    "text": "EFFECT_OLDUNION_STATUS"
+  },
+  {
+    "description": "In the chain\nValue: 0x10000",
+    "text": "STATUS_CHAINING"
+  },
+  {
+    "description": "At the end of the chain\nValue: 1026",
+    "text": "EVENT_CHAIN_END"
+  },
+  {
+    "description": "Flip Summon effect\nValue: 0x800",
+    "text": "CATEGORY_FLIP"
+  },
+  {
+    "description": "Sets the final DEF value\nValue: 106",
+    "text": "EFFECT_SET_DEFENSE_FINAL"
+  },
+  {
+    "description": "Tuner Monster\nValue: 0x1000",
+    "text": "TYPE_TUNER"
+  },
+  {
+    "description": "Allows Synchro Summoning using monsters on the hand as Synchro Material\nValue: 339",
+    "text": "EFFECT_HAND_SYNCHRO"
+  },
+  {
+    "description": "(?)\nValue: 337",
+    "text": "EFFECT_DISABLE_CHAIN_FIELD"
+  },
+  {
+    "description": "Triggered when the state of the card itself changes\nValue: 0x0001",
+    "text": "EFFECT_TYPE_SINGLE"
+  },
+  {
+    "description": "(?)\nValue: 336",
+    "text": "EFFECT_UNSUMMONABLE_CARD"
+  },
+  {
+    "description": "Prevents effect damage\nValue: 335",
+    "text": "EFFECT_NO_EFFECT_DAMAGE"
+  },
+  {
+    "description": "Card can be banished from GY as Ritual Material\nValue: 243",
+    "text": "EFFECT_EXTRA_RITUAL_MATERIAL"
+  },
+  {
+    "description": "Decreases the number of Tributes required for a Tribute Summon\nValue: 151",
+    "text": "EFFECT_DECREASE_TRIBUTE"
+  },
+  {
+    "description": "Value: 3",
+    "text": "ASSUME_LEVEL"
+  },
+  {
+    "description": "Reply after damage conversion (?)\nValue: 0x10000",
+    "text": "REASON_RRECOVER"
+  },
+  {
+    "description": "Prevents the opponent from targeting for card effects\nValue: 333",
+    "text": "EFFECT_CANNOT_SELECT_EFFECT_TARGET"
+  },
+  {
+    "description": "Value: 6",
+    "text": "CHINT_description"
+  },
+  {
+    "description": "Value: 7",
+    "text": "ASSUME_ATTACK"
+  },
+  {
+    "description": "Replaces card being sent somewhere else\nValue: 52",
+    "text": "EFFECT_SEND_REPLACE"
+  },
+  {
+    "description": "Sets a remaining number of Special Summons of a player\nValue: 331",
+    "text": "EFFECT_LEFT_SPSUMMON_COUNT"
+  },
+  {
+    "description": "Damage calculation\nValue: 0x40",
+    "text": "PHASE_DAMAGE_CAL"
+  },
+  {
+    "description": "Limits the amount of Special Summons in a turn\nValue: 330",
+    "text": "EFFECT_SPSUMMON_COUNT_LIMIT"
+  },
+  {
+    "description": "Change the final Level\nValue: 314",
+    "text": "EFFECT_CHANGE_LEVEL_FINAL"
+  },
+  {
+    "description": "Makes a player conduct their Battle Phase twice\nValue: 296",
+    "text": "EFFECT_BP_TWICE"
+  },
+  {
+    "description": "Remove Brainwashing effect of returning monsters to their owners\nValue: 295",
+    "text": "EFFECT_REMOVE_BRAINWASHING"
+  },
+  {
+    "description": "Immunity against Necrovalley effect\nValue: 293",
+    "text": "EFFECT_NECRO_VALLEY_IM"
+  },
+  {
+    "description": "Adds a cost for Special Summoning\nValue: 92",
+    "text": "EFFECT_SPSUMMON_COST"
+  },
+  {
+    "description": "Sets Level of the card Tributed for a Ritual Summon\nValue: 241",
+    "text": "EFFECT_RITUAL_LEVEL"
+  },
+  {
+    "description": "Sets original ATK value\nValue: 103",
+    "text": "EFFECT_SET_BASE_ATTACK"
+  },
+  {
+    "description": "Sets Link Rating\nValue: 421",
+    "text": "EFFECT_CHANGE_LINK"
+  },
+  {
+    "description": "Skip Draw Phase (DP)\nValue: 180",
+    "text": "EFFECT_SKIP_DP"
+  },
+  {
+    "description": "Changed position (?)\nValue: 0x1000000",
+    "text": "STATUS_JUST_POS"
+  },
+  {
+    "description": "Limits amount of cards in hand\nValue: 270",
+    "text": "EFFECT_HAND_LIMIT"
+  },
+  {
+    "description": "If card attacks, must attack X\nValue: 343",
+    "text": "EFFECT_ONLY_ATTACK_MONSTER"
+  },
+  {
+    "description": "Spell/Trap uses more Zones\nValue: 262",
+    "text": "EFFECT_USE_EXTRA_SZONE"
+  },
+  {
+    "description": "Was Xyz Summoned\nValue: 0x200000",
+    "text": "REASON_XYZ"
+  },
+  {
+    "description": "Hand destruction effect\nValue: 0x80",
+    "text": "CATEGORY_HANDES"
+  },
+  {
+    "description": "Target Range does not change because of control changes\nValue: 0x0040",
+    "text": "EFFECT_FLAG_ABSOLUTE_TARGET"
+  },
+  {
+    "description": "Monsters change (?)\nValue: 0x1c0",
+    "text": "TIMINGS_CHECK_MONSTER"
+  },
+  {
+    "description": "After attack is declared\nValue: 0x1000",
+    "text": "TIMING_ATTACK"
+  },
+  {
+    "description": "Allows monster to be placed in the S/T Zone\nValue: 18",
+    "text": "EFFECT_MONSTER_SSET"
+  },
+  {
+    "description": "Treats the Field as another card, while there's no other Field Spell on the field\nValue: 290",
+    "text": "EFFECT_CHANGE_ENVIRONMENT"
+  },
+  {
+    "description": "Card cannot be used as Link Material\nValue: 239",
+    "text": "EFFECT_CANNOT_BE_LINK_MATERIAL"
+  },
+  {
+    "description": "Sets custom Synchro Material use\nValue: 237",
+    "text": "EFFECT_SYNCHRO_MATERIAL_CUSTOM"
+  },
+  {
+    "description": "Changed to same position(?)\nValue: 0x2000000",
+    "text": "STATUS_CONTINUOUS_POS"
+  },
+  {
+    "description": "Can be used as a Synchro Material\nValue: 232",
+    "text": "EFFECT_SYNCHRO_MATERIAL"
+  },
+  {
+    "description": "Used by Duel.GetLocationCount() (?)\nValue: 0x1",
+    "text": "LOCATION_REASON_TOFIELD"
+  },
+  {
+    "description": "Specify Fusion Materials\nValue: 230",
+    "text": "EFFECT_FUSION_MATERIAL"
+  },
+  {
+    "description": "Sets original DEF value\nValue: 107",
+    "text": "EFFECT_SET_BASE_DEFENSE"
+  },
+  {
+    "description": "Effect resets on your opponent's turn\nValue: 0x20000000",
+    "text": "RESET_OPPO_TURN"
+  },
+  {
+    "description": "Piercing battle damage\nValue: 203",
+    "text": "EFFECT_PIERCE"
+  },
+  {
+    "description": "Card must be attacked\nValue: 195",
+    "text": "EFFECT_MUST_BE_ATTACKED"
+  },
+  {
+    "description": "Link Marker\nValue: 0x004",
+    "text": "LINK_MARKER_BOTTOM_RIGHT"
+  },
+  {
+    "description": "(?)\nValue: 0x10000000",
+    "text": "EFFECT_FLAG_NAGA"
+  },
+  {
+    "description": "Card must attack before other monsters\nValue: 192",
+    "text": "EFFECT_FIRST_ATTACK"
+  },
+  {
+    "description": "Value: 2",
+    "text": "ASSUME_TYPE"
+  },
+  {
+    "description": "Change control effect\nValue: 0x2000",
+    "text": "CATEGORY_CONTROL"
+  },
+  {
+    "description": "Skip Standby Phase (SP)\nValue: 181",
+    "text": "EFFECT_SKIP_SP"
+  },
+  {
+    "description": "Special Summon negation immunity\nValue: 27",
+    "text": "EFFECT_CANNOT_DISABLE_SPSUMMON"
+  },
+  {
+    "description": "Allows replacing counter removals\nValue: 0x30000",
+    "text": "EFFECT_RCOUNTER_REPLACE"
+  },
+  {
+    "description": "Reverts LP gain to damage\nValue: 81",
+    "text": "EFFECT_REVERSE_RECOVER"
+  },
+  {
+    "description": "Union status\nValue: 347",
+    "text": "EFFECT_UNION_STATUS"
+  },
+  {
+    "description": "Chain extra type\nValue: 0x2000",
+    "text": "CHAININFO_EXTTYPE"
+  },
+  {
+    "description": "Prevents sending to GY\nValue: 68",
+    "text": "EFFECT_CANNOT_TO_GRAVE"
+  },
+  {
+    "description": "Card can be used as 2 Tributes\nValue: 150",
+    "text": "EFFECT_DOUBLE_TRIBUTE"
+  },
+  {
+    "description": "Sets a condition to be sent to GY\nValue: 142",
+    "text": "EFFECT_SELF_TOGRAVE"
+  },
+  {
+    "description": "Sets a condition to be self destroyed\nValue: 141",
+    "text": "EFFECT_SELF_DESTROY"
+  },
+  {
+    "description": "Sets Right Pendulum Scale\nValue: 137",
+    "text": "EFFECT_CHANGE_RSCALE"
+  },
+  {
+    "description": "Sets Left Pendulum Scale\nValue: 135",
+    "text": "EFFECT_CHANGE_LSCALE"
+  },
+  {
+    "description": "Increases/decreases Left Pendulum Scale\nValue: 134",
+    "text": "EFFECT_UPDATE_LSCALE"
+  },
+  {
+    "description": "Was Set this turn\nValue: 0x0010",
+    "text": "STATUS_SET_TURN"
+  },
+  {
+    "description": "Sets new Rank value\nValue: 133",
+    "text": "EFFECT_CHANGE_RANK"
+  },
+  {
+    "description": "Increases/decreases Rank\nValue: 132",
+    "text": "EFFECT_UPDATE_RANK"
+  },
+  {
+    "description": "Changes Type (monster Type)\nValue: 122",
+    "text": "EFFECT_CHANGE_RACE"
+  },
+  {
+    "description": "Removes a Type (monster Type)\nValue: 121",
+    "text": "EFFECT_REMOVE_RACE"
+  },
+  {
+    "description": "Spirit Monster\nValue: 0x200",
+    "text": "TYPE_SPIRIT"
+  },
+  {
+    "description": "Initialization\nValue: 0x400000",
+    "text": "STATUS_INITIALIZING"
+  },
+  {
+    "description": "Swaps ATK and DEF\nValue: 109",
+    "text": "EFFECT_SWAP_AD"
+  },
+  {
+    "description": "Neither players\nValue: 2",
+    "text": "PLAYER_NONE"
+  },
+  {
+    "description": "Reverts ATK/DEF update effects (increases become decreases and vice versa)\nValue: 108",
+    "text": "EFFECT_REVERSE_UPDATE"
+  },
+  {
+    "description": "Redirects where monsters destroyed by battle should go instead of GY\nValue: 204",
+    "text": "EFFECT_BATTLE_DESTROY_REDIRECT"
+  },
+  {
+    "description": "Sets DEF value (to a specific value)\nValue: 105",
+    "text": "EFFECT_SET_DEFENSE"
+  },
+  {
+    "description": "Sets ATK value (to a specific value)\nValue: 101",
+    "text": "EFFECT_SET_ATTACK"
+  },
+  {
+    "description": "Addds a cost for Flip Summoning\nValue: 93",
+    "text": "EFFECT_FLIPSUMMON_COST"
+  },
+  {
+    "description": "Reflects damage to opponent\nValue: 83",
+    "text": "EFFECT_REFLECT_DAMAGE"
+  },
+  {
+    "description": "Allows a counter type to be placed\nValue: 0x10000",
+    "text": "EFFECT_COUNTER_PERMIT"
+  },
+  {
+    "description": "Face-down Attack Position\nValue: 0x2",
+    "text": "POS_FACEDOWN_ATTACK"
+  },
+  {
+    "description": "Reverts damage to LP gain\nValue: 80",
+    "text": "EFFECT_REVERSE_DAMAGE"
+  },
+  {
+    "description": "Allows a card to be Normal Summoned again (Gemini)\nValue: 77",
+    "text": "EFFECT_DUAL_SUMMONABLE"
+  },
+  {
+    "description": "Choose a card you control\nValue: 529",
+    "text": "HINTMSG_SELF"
+  },
+  {
+    "description": "Chain card controller\nValue: 0x08",
+    "text": "CHAININFO_TRIGGERING_CONTROLER"
+  },
+  {
+    "description": "Ignores attack target (allows direct attack if only cards with this effect are on the side of the field)\nValue: 72",
+    "text": "EFFECT_IGNORE_BATTLE_TARGET"
+  },
+  {
+    "description": "Prevents flipping face-down\nValue: 69",
+    "text": "EFFECT_CANNOT_TURN_SET"
+  },
+  {
+    "description": "When control of a card changes\nValue: 1120",
+    "text": "EVENT_CONTROL_CHANGED"
+  },
+  {
+    "description": "Redirects cards leaving the field\nValue: 60",
+    "text": "EFFECT_LEAVE_FIELD_REDIRECT"
+  },
+  {
+    "description": "FIRE\nValue: 0x04",
+    "text": "ATTRIBUTE_FIRE"
+  },
+  {
+    "description": "Limits the number of activation\nValue: 0x0004",
+    "text": "EFFECT_FLAG_COUNT_LIMIT"
+  },
+  {
+    "description": "Specify the location and Battle Position of the summons/rule special summons (?)\nValue: 0x100000",
+    "text": "EFFECT_FLAG_SPSUM_PARAM"
+  },
+  {
+    "description": "Prevents sending cards from Deck to GY\nValue: 56",
+    "text": "EFFECT_CANNOT_DISCARD_DECK"
+  },
+  {
+    "description": "Choose a card your opponent controls\nValue: 530",
+    "text": "HINTMSG_OPPO"
+  },
+  {
+    "description": "When a turn ends\nValue: 1210",
+    "text": "EVENT_TURN_END"
+  },
+  {
+    "description": "Destruction immunity\nValue: 40",
+    "text": "EFFECT_INDESTRUCTABLE"
+  },
+  {
+    "description": "Set mandatory procedure\nValue: 37",
+    "text": "EFFECT_LIMIT_SET_PROC"
+  },
+  {
+    "description": "Pyro\nValue: 0x80",
+    "text": "RACE_PYRO"
+  },
+  {
+    "description": "Card gains extra attacks on monsters\nValue: 346",
+    "text": "EFFECT_EXTRA_ATTACK_MONSTER"
+  },
+  {
+    "description": "Increases the number of Sets in a turn (Normal Summon)\nValue: 35",
+    "text": "EFFECT_EXTRA_SET_COUNT"
+  },
+  {
+    "description": "Sets a condition for Special Summon\nValue: 30",
+    "text": "EFFECT_SPSUMMON_CONDITION"
+  },
+  {
+    "description": "Disables Flip Summon\nValue: 21",
+    "text": "EFFECT_CANNOT_FLIP_SUMMON"
+  },
+  {
+    "description": "Sets Level of the card used as Xyz Material\nValue: 242",
+    "text": "EFFECT_XYZ_LEVEL"
+  },
+  {
+    "description": "Sent to adjust hand limit\nValue: 0x100",
+    "text": "REASON_ADJUST"
+  },
+  {
+    "description": "Can only be Special Summoned once in the turn (Card.SetSPSummonOnce()) (?)\nValue: 0x200",
+    "text": "GLOBALFLAG_SPSUMMON_ONCE"
+  },
+  {
+    "description": "Effect negation\nValue: 8",
+    "text": "EFFECT_DISABLE_EFFECT"
+  },
+  {
+    "description": "Control change immunity\nValue: 5",
+    "text": "EFFECT_CANNOT_CHANGE_CONTROL"
+  },
+  {
+    "description": "Link Marker\nValue: 0x002",
+    "text": "LINK_MARKER_BOTTOM"
+  },
+  {
+    "description": "When a die is rolled\nValue: 1150",
+    "text": "EVENT_TOSS_DICE"
+  },
+  {
+    "description": "Active while the card is an Xyz Material\nValue: 0x1000",
+    "text": "EFFECT_TYPE_XMATERIAL"
+  },
+  {
+    "description": "Sent by becoming material for a Summon\nValue: 0x8",
+    "text": "REASON_MATERIAL"
+  },
+  {
+    "description": "Counter that can be placed on a non-specific card\nValue: 0x1000",
+    "text": "COUNTER_WITHOUT_PERMIT"
+  },
+  {
+    "description": "Dinosaur\nValue: 0x10000",
+    "text": "RACE_DINOSAUR"
+  },
+  {
+    "description": "Increases the number of attacks\nValue: 194",
+    "text": "EFFECT_EXTRA_ATTACK"
+  },
+  {
+    "description": "Prevents placing counters\nValue: 58",
+    "text": "EFFECT_CANNOT_PLACE_COUNTER"
+  },
+  {
+    "description": "Cannot be copied\nValue: 0x40000",
+    "text": "EFFECT_FLAG_UNCOPYABLE"
+  },
+  {
+    "description": "End Phase (EP)\nValue: 0x200",
+    "text": "PHASE_END"
+  },
+  {
+    "description": "Effect can be activated during damage calculation\nValue: 0x8000",
+    "text": "EFFECT_FLAG_DAMAGE_CAL"
+  },
+  {
+    "description": "Link Marker\nValue: 0x040",
+    "text": "LINK_MARKER_TOP_LEFT"
+  },
+  {
+    "description": "Ignores effect immunity\nValue: 0x0080",
+    "text": "EFFECT_FLAG_IGNORE_IMMUNE"
+  },
+  {
+    "description": "Effect is registered globally\nValue: 0x0008",
+    "text": "EFFECT_FLAG_FIELD_ONLY"
+  },
+  {
+    "description": "Draw Phase (DP)\nValue: 0x01",
+    "text": "PHASE_DRAW"
+  },
+  {
+    "description": "Was redirected\nValue: 0x4000000",
+    "text": "REASON_REDIRECT"
+  },
+  {
+    "description": "Redirects cards going to the Deck\nValue: 62",
+    "text": "EFFECT_TO_DECK_REDIRECT"
+  },
+  {
+    "description": "Reset the single effect of the specified Code (without EFFECT_FLAG_SINGLE_RANGE) (?)\nValue: 0x4000",
+    "text": "RESET_CODE"
+  },
+  {
+    "description": "Continuous effect\nValue: 0x0800",
+    "text": "EFFECT_TYPE_CONTINUOUS"
+  },
+  {
+    "description": "Control change\nValue: 4",
+    "text": "EFFECT_SET_CONTROL"
+  },
+  {
+    "description": "RESET_TOFIELD+RESET_LEAVE+RESET_TODECK+RESET_TOHAND+RESET_TEMP_REMOVE+RESET_REMOVE+RESET_TOGRAVE+RESET_TURN_SET\nValue: 0x1fe0000",
+    "text": "RESETS_STANDARD"
+  },
+  {
+    "description": "Discarded\nValue: 0x4000",
+    "text": "REASON_DISCARD"
+  },
+  {
+    "description": "Player that negated\nValue: 0x400",
+    "text": "CHAININFO_DISABLE_PLAYER"
+  },
+  {
+    "description": "Chain player\nValue: 0x04",
+    "text": "CHAININFO_TRIGGERING_PLAYER"
+  },
+  {
+    "description": "Was Ritual Summoned\nValue: 0x100000",
+    "text": "REASON_RITUAL"
+  },
+  {
+    "description": "Psychic\nValue: 0x100000",
+    "text": "RACE_PSYCHO"
+  },
+  {
+    "description": "Both players\nValue: 3",
+    "text": "PLAYER_ALL"
+  },
+  {
+    "description": "Link Marker\nValue: 0x020",
+    "text": "LINK_MARKER_RIGHT"
+  },
+  {
+    "description": "Damage Step\nValue: 0x20",
+    "text": "PHASE_DAMAGE"
+  },
+  {
+    "description": "Player cannot lose the Duel because their LP was reduced to 0\nValue: 401",
+    "text": "EFFECT_CANNOT_LOSE_LP"
+  },
+  {
+    "description": "In special circumstances, the activation will not be negated (?)\nValue: 0x0001",
+    "text": "EFFECT_FLAG2_NAGA"
+  },
+  {
+    "description": "Value: 6",
+    "text": "ASSUME_RACE"
+  },
+  {
+    "description": "Skip Battle Phase (BP)\nValue: 183",
+    "text": "EFFECT_SKIP_BP"
+  },
+  {
+    "description": "After a draw\nValue: 0x10000",
+    "text": "TIMING_DRAW"
+  },
+  {
+    "description": "Flip Summoned this turn\nValue: 0x20000000",
+    "text": "STATUS_FLIP_SUMMON_TURN"
+  },
+  {
+    "description": "Replaces Fusion Material location\nValue: 231",
+    "text": "EFFECT_CHAIN_MATERIAL"
+  },
+  {
+    "description": "S/T was activated\nValue: 0x800000",
+    "text": "STATUS_ACTIVATED"
+  },
+  {
+    "description": "Set the final ATK (for exchange) (?)\nValue: 111",
+    "text": "EFFECT_SWAP_ATTACK_FINAL"
+  },
+  {
+    "description": "Prevents flip effects from activating (used as Value for position changing effects)\nValue: 0x10000",
+    "text": "NO_FLIP_EFFECT"
+  },
+  {
+    "description": "Had its effects replaced\nValue: 0x80000",
+    "text": "STATUS_EFFECT_REPLACED"
+  },
+  {
+    "description": "Card can be used as 3 Tributes\nValue: 156",
+    "text": "EFFECT_TRIPLE_TRIBUTE"
+  },
+  {
+    "description": "Summoning procedure completed\nValue: 0x0008",
+    "text": "STATUS_PROC_COMPLETE"
+  },
+  {
+    "description": "Pendulum Summoned\nValue: 0x4a000000",
+    "text": "SUMMON_TYPE_PENDULUM"
+  },
+  {
+    "description": "Value: 6",
+    "text": "HINT_RACE"
+  },
+  {
+    "description": "Checks cards used as Material or Tributes\nValue: 251",
+    "text": "EFFECT_MATERIAL_CHECK"
+  },
+  {
+    "description": "Invalid reset (only for the effect of owner==handler) (?)\nValue: 0x00010000",
+    "text": "RESET_DISABLE"
+  },
+  {
+    "description": "Effect negation immunity\nValue: 3",
+    "text": "EFFECT_CANNOT_DISABLE"
+  },
+  {
+    "description": "Redirects cards being banished\nValue: 64",
+    "text": "EFFECT_REMOVE_REDIRECT"
+  },
+  {
+    "description": "Token\nValue: 0x4000",
+    "text": "TYPE_TOKEN"
+  },
+  {
+    "description": "Pendulum Zones\nValue: 0x200",
+    "text": "LOCATION_PZONE"
+  }
+]

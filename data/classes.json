@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Represents an effect.",
+    "text": "Effect"
+  },
+  {
+    "description": "Represents a card.",
+    "text": "Card"
+  },
+  {
+    "description": "Provides in-game debug features.",
+    "text": "Debug"
+  },
+  {
+    "description": "Provides utility functions, summoning procedure templates, filter templates, etc.",
+    "text": "aux"
+  },
+  {
+    "description": "Contains all functions to operate on cards and effects in a Duel",
+    "text": "Duel"
+  },
+  {
+    "description": "Represents a set of cards.",
+    "text": "Group"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "text": "initial_effect",
+    "description": "initial_effect(c: Card)\n\nCalled when the card is loaded to register the initial card effect.",
+    "snippet": "initial_effect(c)",
+    "leftLabel": ""
+  }
+]

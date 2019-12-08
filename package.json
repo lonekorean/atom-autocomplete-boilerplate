@@ -1,15 +1,15 @@
 {
-  "name": "autocomplete-boilerplate",
+  "name": "autocomplete-ygoproapi",
   "main": "./lib/main",
   "version": "0.2.0",
-  "description": "Boilerplate package for creating your own custom autocomplete provider for Atom.",
+  "description": "Autocomplete provider for YGOPro API.",
   "keywords": [
     "autocomplete",
     "provider",
     "boilerplate"
   ],
-  "repository": "https://github.com/lonekorean/atom-autocomplete-boilerplate",
-  "author": "Will Boyd <will@codersblock.com> (http://codersblock.com)",
+  "repository": "https://github.com/piface314/autocomplete-ygoproapi",
+  "author": "piface314",
   "license": "MIT",
   "engines": {
     "atom": ">=1.15.0 <2.0.0"
