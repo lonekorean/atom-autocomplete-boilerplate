@@ -4,9 +4,10 @@
   "version": "0.2.0",
   "description": "Autocomplete provider for YGOPro API.",
   "keywords": [
+    "ygopro",
     "autocomplete",
-    "provider",
-    "boilerplate"
+    "ygoproapi",
+    "yugioh"
   ],
   "repository": "https://github.com/piface314/autocomplete-ygoproapi",
   "author": "piface314",
