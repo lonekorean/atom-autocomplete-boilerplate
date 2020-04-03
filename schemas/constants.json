@@ -1,0 +1,13 @@
+{
+  "description": "Lists and describes global constants used by different classes."
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [ "id", "desc", "value" ],
+    "properties": {
+      "id": { "type": "string" },
+      "desc": { "type": "string" },
+      "value": { "type": "string" }
+    }
+  }
+}

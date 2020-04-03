@@ -1,0 +1,40 @@
+[
+  {
+    "cls": "Effect",
+    "infer": "e",
+    "members": [
+      {
+        "id": "CreateEffect",
+        "args": [
+          { "id": "c", "type": "Card" }
+        ],
+        "ret": [ "Effect" ],
+        "desc": "(c: Card)\n\nCreate a new empty effect whose owner is card c.",
+      },
+      {
+        "id": "SetTarget",
+        "args": [
+          { "id": "e", "type": "Effect" },
+          { "id": "f", "type": "function" },
+        ],
+        "desc": "(e: Effect, f: function)\n\nSets the target property."
+      }
+    ]
+  },
+  {
+    "cls": "Card",
+    "infer": "c",
+    "members": [
+      {
+        "id": "RegisterEffect",
+        "args": [
+          { "id": "c", "type": "Card" },
+          { "id": "e", "type": "Effect" },
+          { "id": "forced", "type": "boolean", "opt": true },
+        ],
+        "ret": [ "number" ],
+        "desc": "(c: Card, e: Effect[, forced: boolean = false])\n\nRegisters the effect e to c, returns the global id of the effect, and set the Handler of e to c\nBy default, if c is registered with the effect of immune e then the registration will fail\nIf forced is true, the immune effect of c against e will not be checked.",
+      }
+    ]
+  }
+]

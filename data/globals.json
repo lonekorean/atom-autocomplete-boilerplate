@@ -1,0 +1,7 @@
+[
+  {
+    "id": "GetID",
+    "ret": [ "table", "number" ],
+    "desc": "()\n\nReturns card global table and card ID.",
+  }
+]

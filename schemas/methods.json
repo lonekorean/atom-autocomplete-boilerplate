@@ -1,0 +1,39 @@
+{
+  "description": "Describes and defines completion for class methods exposed by the API.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [ "cls", "members" ],
+    "properties": {
+      "cls": { "type": "string" },
+      "infer": { "type": "string" },
+      "members": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [ "id", "desc" ],
+          "properties": {
+            "id": { "type": "string" },
+            "args": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [ "id", "type" ],
+                "properties": {
+                  "id": { "type": "string" },
+                  "type": { "type": "string" },
+                  "opt": { "type": "boolean" }
+                }
+              }
+            },
+            "ret": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "desc": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

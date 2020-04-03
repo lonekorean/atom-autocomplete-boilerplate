@@ -1,26 +1,21 @@
 [
   {
-    "description": "Represents an effect.",
-    "text": "Effect"
-  },
-  {
-    "description": "Represents a card.",
-    "text": "Card"
-  },
-  {
-    "description": "Provides in-game debug features.",
-    "text": "Debug"
-  },
-  {
-    "description": "Provides utility functions, summoning procedure templates, filter templates, etc.",
-    "text": "aux"
-  },
-  {
-    "description": "Contains all functions to operate on cards and effects in a Duel",
-    "text": "Duel"
-  },
-  {
-    "description": "Represents a set of cards.",
-    "text": "Group"
+    "id": "Effect",
+    "desc": "Represents an effect."
+  }, {
+    "id": "Card",
+    "desc": "Represents a card."
+  }, {
+    "id": "Debug",
+    "desc": "Provides in-game debug features."
+  }, {
+    "id": "aux",
+    "desc": "Provides utility functions, summoning procedure templates, filter templates, etc."
+  }, {
+    "id": "Duel",
+    "desc": "Contains all functions to operate on cards and effects in a Duel"
+  }, {
+    "id": "Group",
+    "desc": "Represents a group of cards."
   }
 ]

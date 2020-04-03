@@ -1,0 +1,12 @@
+{
+  "description": "Lists and describes classes exposed by the script API and utility scripts.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [ "id", "desc" ]
+    "properties": {
+      "id": { "type": "string" },
+      "desc": { "type": "string" }
+    }
+  }
+}
