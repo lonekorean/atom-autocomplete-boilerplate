@@ -1,5 +1,5 @@
 {
-  "description": "Describes and defines completion for functions/snippets usually called from the global card table (`cXXXXXXXX` or `s`).",
+  "description": "Defines snippets for different kinds of callback functions used by card effects. E.g. `initial_effect`, `operation`, `condition`, etc.",
   "type": "array",
   "items": {
     "type": "object",
@@ -22,7 +22,11 @@
         "type": "array",
         "items": { "type": "string" }
       },
-      "desc": { "type": "string" }
+      "desc": { "type": "string" },
+      "uses": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
     }
   }
 }

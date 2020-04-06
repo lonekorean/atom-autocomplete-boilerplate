@@ -23,7 +23,7 @@
     }
   },
   "configSchema": {
-    "onlyUpperCaseForConstants": {
+    "matchCaseForConstants": {
       "type": "boolean",
       "default": true
     },
