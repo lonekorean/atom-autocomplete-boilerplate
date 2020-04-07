@@ -1,11 +1,17 @@
 {
-  "description": "Defines snippets for different kinds of callback functions used by card effects. E.g. `initial_effect`, `operation`, `condition`, etc.",
+  "description": "Defines snippets for different kinds of callback functions used by card effects. E.g. `initial_effect`, `operation`, `target`, `cost`, `condition`, `value`, etc.",
   "type": "array",
   "items": {
     "type": "object",
-    "required": [ "id", "desc" ],
+    "required": [ "id", "desc", "used_as", "args" ],
     "properties": {
       "id": { "type": "string" },
+      "desc": { "type": "string" },
+      "used_as": { "type": "string" },
+      "used_by": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
       "args": {
         "type": "array",
         "items": {
@@ -14,19 +20,11 @@
           "properties": {
             "id": { "type": "string" },
             "type": { "type": "string" },
-            "opt": { "type": "boolean" }
+            "desc": { "type": "string" }
           }
         }
       },
-      "ret": {
-        "type": "array",
-        "items": { "type": "string" }
-      },
-      "desc": { "type": "string" },
-      "uses": {
-        "type": "array",
-        "items": { "type": "string" }
-      }
+      "ret": { "type": "string" }
     }
   }
 }

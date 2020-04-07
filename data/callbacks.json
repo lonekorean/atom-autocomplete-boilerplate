@@ -1,9 +1,124 @@
 [
   {
     "id": "initial_effect",
+    "desc": "Called when the card is loaded to register the initial card effects.",
     "args": [
-      { "id": "c", "type": "Card" }
+      { "id": "c", "type": "Card", "desc": "the card that is being loaded" }
     ]
-    "desc": "(c: Card)\n\nCalled when the card is loaded to register the initial card effects.",
+  }, {
+    "id": "filter",
+    "desc": "Generic filter that can be used in many Group operations. Extra arguments passed to those operations are later passed to these filters.",
+    "used_as": "filter",
+    "args": [ { "id": "c", "type": "Card", "desc": "a card from the Group being filtered" } ],
+    "ret": "boolean"
+  }, {
+    "id": "matpropcon",
+    "desc": "Checks if an effect that changes properties of a card being used as material for a Special Summon can be applied.",
+    "used_as": "operation",
+    "used_by": [
+      "EFFECT_ADD_CODE", "EFFECT_CHANGE_CODE", "EFFECT_REMOVE_CODE",
+      "EFFECT_ADD_SETCODE", "EFFECT_CHANGE_SETCODE",
+      "EFFECT_ADD_TYPE", "EFFECT_CHANGE_TYPE", "EFFECT_REMOVE_TYPE",
+      "EFFECT_ADD_ATTRIBUTE", "EFFECT_CHANGE_ATTRIBUTE", "EFFECT_REMOVE_ATTRIBUTE"
+    ],
+    "args": [
+      { "id": "sc", "type": "Card", "desc": "the card that is being summoned" },
+      { "id": "sumtype", "type": "number", "desc": "summon type" },
+      { "id": "tp", "type": "number", "desc": "triggering player" }
+    ],
+    "ret": "boolean"
+  }, {
+    "id": "matpropval",
+    "desc": "Sets the value of a property of a card being used as material for a Special Summon.",
+    "used_as": "value",
+    "used_by": [
+      "EFFECT_ADD_CODE", "EFFECT_CHANGE_CODE", "EFFECT_REMOVE_CODE",
+      "EFFECT_ADD_SETCODE", "EFFECT_CHANGE_SETCODE",
+      "EFFECT_ADD_TYPE", "EFFECT_CHANGE_TYPE", "EFFECT_REMOVE_TYPE",
+      "EFFECT_ADD_ATTRIBUTE", "EFFECT_CHANGE_ATTRIBUTE", "EFFECT_REMOVE_ATTRIBUTE"
+    ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "c", "type": "Card", "desc": "card used as material" },
+      { "id": "rp", "type": "number",  "desc": "reason player, the one Summoning" }
+    ],
+    "ret": "number"
+  }, {
+    "id": "spsumlvlval",
+    "desc": "Sets the Level(s) a monster must be treated when used as material for a Special Summon. For Xyz Summon, this function can return multiple values.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_RITUAL_LEVEL", "EFFECT_SYNCHRO_LEVEL", "EFFECT_XYZ_LEVEL" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "mc", "type": "Card", "desc": "card used as material" },
+      { "id": "sc", "type": "Card", "desc": "card being Special Summoned" },
+    ],
+    "ret": "number"
+  }, {
+    "id": "ctpermittg",
+    "desc": "Checks if a specific counter can be placed on card c. Usually passed as argument to Card.EnableCounterPermit.",
+    "used_as": "target",
+    "used_by": [ "Card.EnableCounterPermit", "EFFECT_COUNTER_PERMIT" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "c", "type": "Card", "desc": "card to be checked" }
+    ],
+    "ret": "boolean"
+  }, {
+    "id": "ssprocgcon",
+    "desc": "Checks if Special Summon can happen in a custom Special Summon procedure.",
+    "used_as": "condition",
+    "used_by": [ "EFFECT_SPSUMMON_PROC_G" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "c", "type": "Card", "desc": "card to be Special Summoned" }
+    ],
+    "ret": "boolean"
+  }, {
+    "id": "fusionmatcon",
+    "desc": "(?) Checks if Fusion Summon can happen in a custom Fusion Summon procedure.",
+    "used_as": "condition",
+    "used_by": [ "EFFECT_FUSION_MATERIAL" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "mg", "type": "Group", "desc": "material group" },
+      { "id": "umg", "type": "Group", "desc": "already used material group" },
+      { "id": "chkf", "type": "number", "desc": "zones to be checked" },
+    ],
+    "ret": "boolean"
+  }, {
+    "id": "summoncost",
+    "desc": "Checks if a custom cost for Summoning can be paid.",
+    "used_as": "cost",
+    "used_by": [ "EFFECT_SUMMON_COST" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+    ],
+    "ret": "boolean"
+  }, {
+    "id": "attackcost",
+    "desc": "Checks if a custom cost for attacking can be paid.",
+    "used_as": "cost",
+    "used_by": [ "EFFECT_ATTACK_COST" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+    ],
+    "ret": "boolean"
+  }, {
+    "id": "spsumcost",
+    "desc": "Checks if a custom cost for Special Summoning can be paid.",
+    "used_as": "cost",
+    "used_by": [ "EFFECT_SPSUMMON_COST" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "sumtype", "type": "number", "desc": "Special Summoning type" },
+    ],
+    "ret": "boolean"
   }
 ]
