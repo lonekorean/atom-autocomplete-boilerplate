@@ -2,16 +2,78 @@
   {
     "id": "initial_effect",
     "desc": "Called when the card is loaded to register the initial card effects.",
+    "used_as": "",
     "args": [
       { "id": "c", "type": "Card", "desc": "the card that is being loaded" }
     ]
-  }, {
+  },
+  {
+    "id": "affval",
+    "desc": "Used by generic effects that affect cards in some way, and checks whether that effect should affect the given card or not.",
+    "used_as": "value",
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "the effect that might affect the card" },
+      { "id": "c", "type": "Card", "desc": "a card that might be affected" },
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "condition",
+    "desc": "Generic condition callback. If in doubt, use this callback as condition.",
+    "used_as": "condition",
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "eg", "type": "Group", "desc": "event group" },
+      { "id": "ep", "type": "number", "desc": "event player" },
+      { "id": "ev", "type": "number", "desc": "event value" },
+      { "id": "re", "type": "Effect", "desc": "reason effect" },
+      { "id": "r", "type": "number", "desc": "reason" },
+      { "id": "rp", "type": "number", "desc": "reason player" }
+    ]
+  },
+  {
+    "id": "cost",
+    "desc": "Generic cost callback. If in doubt, use this callback as cost.",
+    "used_as": "cost",
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "eg", "type": "Group", "desc": "event group" },
+      { "id": "ep", "type": "number", "desc": "event player" },
+      { "id": "ev", "type": "number", "desc": "event value" },
+      { "id": "re", "type": "Effect", "desc": "reason effect" },
+      { "id": "r", "type": "number", "desc": "reason" },
+      { "id": "rp", "type": "number", "desc": "reason player" },
+      { "id": "chk", "type": "number", "desc": "check flag, 0 if cost is being checked, 1 if happening" }
+    ]
+  },
+  {
+    "id": "target",
+    "desc": "Generic target callback. If in doubt, use this callback as target.",
+    "used_as": "target",
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "eg", "type": "Group", "desc": "event group" },
+      { "id": "ep", "type": "number", "desc": "event player" },
+      { "id": "ev", "type": "number", "desc": "event value" },
+      { "id": "re", "type": "Effect", "desc": "reason effect" },
+      { "id": "r", "type": "number", "desc": "reason" },
+      { "id": "rp", "type": "number", "desc": "reason player" },
+      { "id": "chk", "type": "number", "desc": "check flag, 0 if target is being checked, 1 if happening" }
+    ]
+  },
+  {
     "id": "filter",
     "desc": "Generic filter that can be used in many Group operations. Extra arguments passed to those operations are later passed to these filters.",
     "used_as": "filter",
-    "args": [ { "id": "c", "type": "Card", "desc": "a card from the Group being filtered" } ],
-    "ret": "boolean"
-  }, {
+    "args": [
+      { "id": "c", "type": "Card", "desc": "a card from the Group being filtered" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
     "id": "matpropcon",
     "desc": "Checks if an effect that changes properties of a card being used as material for a Special Summon can be applied.",
     "used_as": "operation",
@@ -26,8 +88,9 @@
       { "id": "sumtype", "type": "number", "desc": "summon type" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": "boolean"
-  }, {
+    "ret": [ "boolean" ]
+  },
+  {
     "id": "matpropval",
     "desc": "Sets the value of a property of a card being used as material for a Special Summon.",
     "used_as": "value",
@@ -42,8 +105,9 @@
       { "id": "c", "type": "Card", "desc": "card used as material" },
       { "id": "rp", "type": "number",  "desc": "reason player, the one Summoning" }
     ],
-    "ret": "number"
-  }, {
+    "ret": [ "number" ]
+  },
+  {
     "id": "spsumlvlval",
     "desc": "Sets the Level(s) a monster must be treated when used as material for a Special Summon. For Xyz Summon, this function can return multiple values.",
     "used_as": "value",
@@ -53,8 +117,9 @@
       { "id": "mc", "type": "Card", "desc": "card used as material" },
       { "id": "sc", "type": "Card", "desc": "card being Special Summoned" },
     ],
-    "ret": "number"
-  }, {
+    "ret": [ "number" ]
+  },
+  {
     "id": "ctpermittg",
     "desc": "Checks if a specific counter can be placed on card c. Usually passed as argument to Card.EnableCounterPermit.",
     "used_as": "target",
@@ -63,8 +128,9 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
     ],
-    "ret": "boolean"
-  }, {
+    "ret": [ "boolean" ]
+  },
+  {
     "id": "ssprocgcon",
     "desc": "Checks if Special Summon can happen in a custom Special Summon procedure.",
     "used_as": "condition",
@@ -73,8 +139,9 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be Special Summoned" }
     ],
-    "ret": "boolean"
-  }, {
+    "ret": [ "boolean" ]
+  },
+  {
     "id": "fusionmatcon",
     "desc": "(?) Checks if Fusion Summon can happen in a custom Fusion Summon procedure.",
     "used_as": "condition",
@@ -82,11 +149,12 @@
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "mg", "type": "Group", "desc": "material group" },
-      { "id": "umg", "type": "Group", "desc": "already used material group" },
+      { "id": "umg", "type": "Group", "desc": "(?) already used material group" },
       { "id": "chkf", "type": "number", "desc": "zones to be checked" },
     ],
-    "ret": "boolean"
-  }, {
+    "ret": [ "boolean" ]
+  },
+  {
     "id": "summoncost",
     "desc": "Checks if a custom cost for Summoning can be paid.",
     "used_as": "cost",
@@ -96,8 +164,9 @@
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
     ],
-    "ret": "boolean"
-  }, {
+    "ret": [ "boolean" ]
+  },
+  {
     "id": "attackcost",
     "desc": "Checks if a custom cost for attacking can be paid.",
     "used_as": "cost",
@@ -107,8 +176,9 @@
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
     ],
-    "ret": "boolean"
-  }, {
+    "ret": [ "boolean" ]
+  },
+  {
     "id": "spsumcost",
     "desc": "Checks if a custom cost for Special Summoning can be paid.",
     "used_as": "cost",
@@ -117,8 +187,219 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
-      { "id": "sumtype", "type": "number", "desc": "Special Summoning type" },
+      { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
     ],
-    "ret": "boolean"
-  }
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "spsumlimit",
+    "desc": "Checks if Special Summon of the card can happen.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_SPSUMMON_CONDITION" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "se", "type": "Effect", "desc": "effect that caused Special Summon" },
+      { "id": "sp", "type": "number", "desc": "Special Summoning player" },
+      { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
+      { "id": "pos", "type": "number", "desc": "Special Summon position(s)" },
+      { "id": "tgp", "type": "number", "desc": "target player, to whom the monster(s) will be Special Summoned" },
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "ssproccon",
+    "desc": "Checks if Special Summon can happen in a custom Special Summon procedure.",
+    "used_as": "condition",
+    "used_by": [ "EFFECT_SPSUMMON_PROC" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "c", "type": "Card", "desc": "card to be Special Summoned" },
+      { "id": "mustg", "type": "Group", "desc": "cards that must be used as material" },
+      { "id": "onlyg", "type": "Group", "desc": "(?) cards available to be used as material" },
+      { "id": "minc", "type": "number", "desc": "minimum of materials" },
+      { "id": "maxc", "type": "number", "desc": "maximum of materials" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "sumproccon",
+    "desc": "Checks if Normal/Tribute Summon can happen in a custom Summon procedure.",
+    "used_as": "condition",
+    "used_by": [ "EFFECT_SUMMON_PROC" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "c", "type": "Card", "desc": "card to be Summoned" },
+      { "id": "mintb", "type": "number", "desc": "minimum of Tributes" },
+      { "id": "szone", "type": "Group", "desc": "zone(s) where the monster can be Summoned to" },
+      { "id": "tbzone", "type": "number", "desc": "zone(s) where Tributes are available" },
+      { "id": "exe", "type": "Effect", "desc": "(?) extra effect" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "indelimit",
+    "desc": "Checks if a card can be destroyed by a given card effect.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_INDESTRUCTABLE_EFFECT" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect, trying to destroy" },
+      { "id": "rp", "type": "number", "desc": "reason player, trying to destroy" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "indlimit",
+    "desc": "Checks if a card can be destroyed for a given reason.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_INDESTRUCTABLE", "EFFECT_INDESTRUCTABLE_COUNT" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect, trying to destroy" },
+      { "id": "r", "type": "number", "desc": "reason of destruction" },
+      { "id": "rp", "type": "number", "desc": "reason player, trying to destroy" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "untriblimit",
+    "desc": "(?) Checks if a card cannot be Tributed.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_UNRELEASABLE_EFFECT" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect, trying to Tribute the card" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "rc", "type": "Card", "desc": "reason card" },
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "tgimmunelimit",
+    "desc": "Checks if a card can be targeted by a given card effect.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_CANNOT_BE_EFFECT_TARGET" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect, trying to target" },
+      { "id": "rp", "type": "number", "desc": "reason player, trying to target" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "tglimit",
+    "desc": "Checks if a card can target another.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_CANNOT_BE_EFFECT_TARGET" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect" },
+      { "id": "c", "type": "Card", "desc": "card to be targeted" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "matlimit",
+    "desc": "Checks if a card can be used as material for a given Special Summon type.",
+    "used_as": "value",
+    "used_by": [
+      "EFFECT_CANNOT_BE_RITUAL_MATERIAL", "EFFECT_CANNOT_BE_FUSION_MATERIAL",
+      "EFFECT_CANNOT_BE_SYNCHRO_MATERIAL", "EFFECT_CANNOT_BE_XYZ_MATERIAL",
+      "EFFECT_CANNOT_BE_LINK_MATERIAL", "EFFECT_CANNOT_BE_MATERIAL",
+    ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "c", "type": "Card", "desc": "card being Special Summoned" },
+      { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
+      { "id": "pos", "type": "number", "desc": "Special Summon position" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "zonelimit",
+    "desc": "Defines in which zones a card can be activated. This callback should return an integer whose set bits (1's) represent zones that can be used.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_TYPE_ACTIVATE", "EFFECT_FLAG_LIMIT_ZONE" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "eg", "type": "Group", "desc": "event group" },
+      { "id": "ep", "type": "number", "desc": "event player" },
+      { "id": "ev", "type": "number", "desc": "event value" },
+      { "id": "re", "type": "Effect", "desc": "reason effect" },
+      { "id": "r", "type": "number", "desc": "reason" },
+      { "id": "rp", "type": "number", "desc": "reason player" }
+    ],
+    "ret": [ "number" ]
+  },
+  {
+    "id": "actlimit",
+    "desc": "Checks if a card should not be allowed to activate its effects.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_CANNOT_ACTIVATE" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect, which might not be activated" },
+      { "id": "rp", "type": "number", "desc": "reason player, who might not activate their effect" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "actcostchk",
+    "desc": "Checks if an applied activation cost can be paid.",
+    "used_as": "cost",
+    "used_by": [ "EFFECT_ACTIVATE_COST" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect" },
+      { "id": "rp", "type": "number", "desc": "reason player, who might pay the cost" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "actcosttg",
+    "desc": "Checks if an activation cost should be applied to a given effect.",
+    "used_as": "target",
+    "used_by": [ "EFFECT_ACTIVATE_COST" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect, which might have an applied cost" },
+      { "id": "rp", "type": "number", "desc": "reason player" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "fieldtg",
+    "desc": "Checks if a given card can receive the field effect.",
+    "used_as": "target",
+    "used_by": [ "EFFECT_TYPE_FIELD" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "c", "type": "Card", "desc": "card to be checked" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "eimmunelimit",
+    "desc": "Checks if the card should be immune to a given effect.",
+    "used_as": "value",
+    "used_by": [ "EFFECT_IMMUNE_EFFECT" ],
+    "args": [
+      { "id": "e", "type": "Effect", "desc": "owner effect" },
+      { "id": "re", "type": "Effect", "desc": "reason effect, trying to affect the card" }
+    ],
+    "ret": [ "boolean" ]
+  },
+  {
+    "id": "chainlimit",
+    "desc": "Checks if effects can be chained. Used as argument to Duel.SetChainLimit.",
+    "used_as": "",
+    "used_by": [ "Duel.SetChainLimit" ],
+    "args": [
+      { "id": "re", "type": "Effect", "desc": "reason effect" },
+      { "id": "rp", "type": "number", "desc": "reason player" },
+      { "id": "tp", "type": "number", "desc": "triggering player" }
+    ],
+    "ret": [ "boolean" ]
+  },
 ]
