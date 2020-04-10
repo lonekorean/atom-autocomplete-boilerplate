@@ -3,9 +3,10 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [ "id", "desc" ],
+    "required": [ "id", "desc", "args" ],
     "properties": {
       "id": { "type": "string" },
+      "desc": { "type": "string" },
       "args": {
         "type": "array",
         "items": {
@@ -21,8 +22,7 @@
       "ret": {
         "type": "array",
         "items": { "type": "string" }
-      },
-      "desc": { "type": "string" }
+      }
     }
   }
 }
