@@ -13,7 +13,7 @@
     "used_as": "value",
     "args": [
       { "id": "e", "type": "Effect", "desc": "the effect that might affect the card" },
-      { "id": "c", "type": "Card", "desc": "a card that might be affected" },
+      { "id": "c", "type": "Card", "desc": "a card that might be affected" }
     ],
     "ret": [ "boolean" ]
   },
@@ -133,7 +133,7 @@
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "mc", "type": "Card", "desc": "card used as material" },
-      { "id": "sc", "type": "Card", "desc": "card being Special Summoned" },
+      { "id": "sc", "type": "Card", "desc": "card being Special Summoned" }
     ],
     "ret": [ "number" ]
   },
@@ -168,7 +168,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "mg", "type": "Group", "desc": "material group" },
       { "id": "umg", "type": "Group", "desc": "(?) already used material group" },
-      { "id": "chkf", "type": "number", "desc": "zones to be checked" },
+      { "id": "chkf", "type": "number", "desc": "zones to be checked" }
     ],
     "ret": [ "boolean" ]
   },
@@ -180,7 +180,7 @@
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
-      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
     "ret": [ "boolean" ]
   },
@@ -192,7 +192,7 @@
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
-      { "id": "tp", "type": "number", "desc": "triggering player" },
+      { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
     "ret": [ "boolean" ]
   },
@@ -205,7 +205,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
-      { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
+      { "id": "sumtype", "type": "number", "desc": "Special Summon type" }
     ],
     "ret": [ "boolean" ]
   },
@@ -220,7 +220,7 @@
       { "id": "sp", "type": "number", "desc": "Special Summoning player" },
       { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
       { "id": "pos", "type": "number", "desc": "Special Summon position(s)" },
-      { "id": "tgp", "type": "number", "desc": "target player, to whom the monster(s) will be Special Summoned" },
+      { "id": "tgp", "type": "number", "desc": "target player, to whom the monster(s) will be Special Summoned" }
     ],
     "ret": [ "boolean" ]
   },
@@ -290,7 +290,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to Tribute the card" },
       { "id": "tp", "type": "number", "desc": "triggering player" },
-      { "id": "rc", "type": "Card", "desc": "reason card" },
+      { "id": "rc", "type": "Card", "desc": "reason card" }
     ],
     "ret": [ "boolean" ]
   },
@@ -325,7 +325,7 @@
     "used_by": [
       "EFFECT_CANNOT_BE_RITUAL_MATERIAL", "EFFECT_CANNOT_BE_FUSION_MATERIAL",
       "EFFECT_CANNOT_BE_SYNCHRO_MATERIAL", "EFFECT_CANNOT_BE_XYZ_MATERIAL",
-      "EFFECT_CANNOT_BE_LINK_MATERIAL", "EFFECT_CANNOT_BE_MATERIAL",
+      "EFFECT_CANNOT_BE_LINK_MATERIAL", "EFFECT_CANNOT_BE_MATERIAL"
     ],
     "args": [
       { "id": "e", "type": "Effect", "desc": "owner effect" },
@@ -746,7 +746,7 @@
     "args": [
       { "id": "sc", "type": "Card", "desc": "Special Summon card" },
       { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
-      { "id": "sp", "type": "number", "desc": "Special Summon player" },
+      { "id": "sp", "type": "number", "desc": "Special Summon player" }
     ],
     "ret": [ "boolean" ]
   },
@@ -973,7 +973,7 @@
       "EFFECT_MONSTER_SSET", "EFFECT_HAND_LIMIT", "EFFECT_SET_POSITION",
       "EFFECT_USE_EXTRA_SZONE", "EFFECT_USE_EXTRA_MZONE", "EFFECT_COUNTER_LIMIT",
       "EFFECT_COUNTER_PERMIT", "EFFECT_BECOME_LINKED_ZONE", "EFFECT_ADD_EXTRA_TRIBUTE",
-      "EFFECT_SET_SUMMON_COUNT_LIMIT", "EFFECT_DRAW_COUNT", 
+      "EFFECT_SET_SUMMON_COUNT_LIMIT", "EFFECT_DRAW_COUNT"
     ],
     "args": [ { "id": "e", "type": "Effect", "desc": "owner effect" } ],
     "ret": [ "number" ]

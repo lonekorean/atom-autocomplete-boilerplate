@@ -34,6 +34,10 @@
     "showReturnTypes": {
       "type": "boolean",
       "default": true
+    },
+    "useSpacing": {
+      "type": "boolean",
+      "default": true
     }
   },
   "dependencies": {
