@@ -6,6 +6,7 @@
     "required": [ "id", "desc", "args" ],
     "properties": {
       "id": { "type": "string" },
+      "arglist": { "type": "string" },
       "desc": { "type": "string" },
       "args": {
         "type": "array",

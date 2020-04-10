@@ -1,7 +1,7 @@
 [
   {
     "id": "GetID",
-    "desc": "()\n\nReturns card global table and card ID.",
+    "desc": "Returns card global table and card ID.",
     "args": [],
     "ret": [ "table", "number" ]
   }
