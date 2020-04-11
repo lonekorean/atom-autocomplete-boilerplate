@@ -24,10 +24,7 @@
           }
         }
       },
-      "ret": {
-        "type": "array",
-        "items": "string"
-      }
+      "ret": { "type": "string" }
     }
   }
 }

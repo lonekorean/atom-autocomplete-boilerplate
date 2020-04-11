@@ -15,7 +15,7 @@
       { "id": "e", "type": "Effect", "desc": "the effect that might affect the card" },
       { "id": "c", "type": "Card", "desc": "a card that might be affected" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "condition",
@@ -31,7 +31,7 @@
       { "id": "r", "type": "number", "desc": "reason" },
       { "id": "rp", "type": "number", "desc": "reason player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "cost",
@@ -48,7 +48,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "chk", "type": "number", "desc": "check flag, 0 if cost is being checked, 1 if happening" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "target",
@@ -65,7 +65,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "chk", "type": "number", "desc": "check flag, 0 if target is being checked, 1 if happening" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "operation",
@@ -89,7 +89,7 @@
     "args": [
       { "id": "c", "type": "Card", "desc": "a card from the Group being filtered" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "matpropcon",
@@ -106,7 +106,7 @@
       { "id": "sumtype", "type": "number", "desc": "summon type" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "matpropval",
@@ -123,7 +123,7 @@
       { "id": "c", "type": "Card", "desc": "card used as material" },
       { "id": "rp", "type": "number",  "desc": "reason player, the one Summoning" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "matlvlval",
@@ -135,7 +135,7 @@
       { "id": "mc", "type": "Card", "desc": "card used as material" },
       { "id": "sc", "type": "Card", "desc": "card being Special Summoned" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "ctpermittg",
@@ -146,7 +146,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "ssprocgcon",
@@ -157,7 +157,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be Special Summoned" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "fusionmatcon",
@@ -170,7 +170,7 @@
       { "id": "umg", "type": "Group", "desc": "(?) already used material group" },
       { "id": "chkf", "type": "number", "desc": "zones to be checked" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "summoncost",
@@ -182,7 +182,7 @@
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "attackcost",
@@ -194,7 +194,7 @@
       { "id": "tc", "type": "Card", "desc": "card which triggered the cost" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "spsumcost",
@@ -207,7 +207,7 @@
       { "id": "tp", "type": "number", "desc": "triggering player" },
       { "id": "sumtype", "type": "number", "desc": "Special Summon type" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "ssconval",
@@ -222,7 +222,7 @@
       { "id": "pos", "type": "number", "desc": "Special Summon position(s)" },
       { "id": "tgp", "type": "number", "desc": "target player, to whom the monster(s) will be Special Summoned" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "ssproccon",
@@ -237,7 +237,7 @@
       { "id": "minc", "type": "number", "desc": "minimum of materials" },
       { "id": "maxc", "type": "number", "desc": "maximum of materials" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "sumproccon",
@@ -252,7 +252,7 @@
       { "id": "tbzone", "type": "number", "desc": "zone(s) where Tributes are available" },
       { "id": "exe", "type": "Effect", "desc": "(?) extra effect" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "indelimit",
@@ -264,7 +264,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to destroy" },
       { "id": "rp", "type": "number", "desc": "reason player, trying to destroy" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "indlimit",
@@ -279,7 +279,7 @@
       { "id": "r", "type": "number", "desc": "reason of destruction" },
       { "id": "rp", "type": "number", "desc": "reason player, trying to destroy" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "untriblimit",
@@ -292,7 +292,7 @@
       { "id": "tp", "type": "number", "desc": "triggering player" },
       { "id": "rc", "type": "Card", "desc": "reason card" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "tgimmunelimit",
@@ -304,7 +304,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to target" },
       { "id": "rp", "type": "number", "desc": "reason player, trying to target" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "tglimit",
@@ -316,7 +316,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect" },
       { "id": "c", "type": "Card", "desc": "card to be targeted" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "matlimit",
@@ -333,7 +333,7 @@
       { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
       { "id": "pos", "type": "number", "desc": "Special Summon position" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "zonelimit",
@@ -350,7 +350,7 @@
       { "id": "r", "type": "number", "desc": "reason" },
       { "id": "rp", "type": "number", "desc": "reason player" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "actlimit",
@@ -362,7 +362,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect, which might not be activated" },
       { "id": "rp", "type": "number", "desc": "reason player, who might not activate their effect" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "actcostchk",
@@ -374,7 +374,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect" },
       { "id": "rp", "type": "number", "desc": "reason player, who might pay the cost" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "actcosttg",
@@ -386,7 +386,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect, which might have an applied cost" },
       { "id": "rp", "type": "number", "desc": "reason player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "fieldtg",
@@ -397,7 +397,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "eimmunelimit",
@@ -408,7 +408,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "re", "type": "Effect", "desc": "reason effect, trying to affect the card" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "chainlimit",
@@ -420,7 +420,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "zonemaxlimit",
@@ -433,7 +433,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "r", "type": "number", "desc": "reason" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "forcemzonepval",
@@ -446,7 +446,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "r", "type": "number", "desc": "reason" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "forcemzoneval",
@@ -460,7 +460,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "r", "type": "number", "desc": "reason" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "extratblimit",
@@ -473,7 +473,7 @@
       { "id": "r", "type": "number", "desc": "reason" },
       { "id": "rp", "type": "number", "desc": "reason player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "chainfilter",
@@ -485,7 +485,7 @@
       { "id": "tp", "type": "number", "desc": "triggering player" },
       { "id": "chid", "type": "number", "desc": "chain id" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "lpcostchange",
@@ -498,7 +498,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "val", "type": "number", "desc": "previous LP cost value" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "atkallchk",
@@ -509,7 +509,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "atkctval",
@@ -520,7 +520,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "(?)" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "cantdiscardtg",
@@ -533,7 +533,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect" },
       { "id": "r", "type": "number", "desc": "reason" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "sumlimit",
@@ -548,7 +548,7 @@
       { "id": "pos", "type": "number", "desc": "Summon position" },
       { "id": "tgp", "type": "number", "desc": "target player, to whom the monster might be Summoned" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "msetlimit",
@@ -563,7 +563,7 @@
       { "id": "pos", "type": "number", "desc": "Summon position" },
       { "id": "tgp", "type": "number", "desc": "target player, to whom the monster might be Set" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "ssetlimit",
@@ -575,7 +575,7 @@
       { "id": "c", "type": "Card", "desc": "card that might be Set" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "spsumlimit",
@@ -591,7 +591,7 @@
       { "id": "tgp", "type": "number", "desc": "target player, to whom the card might be Set" },
       { "id": "re", "type": "Effect", "desc": "reason effect" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "forcessposlimit",
@@ -607,7 +607,7 @@
       { "id": "tgp", "type": "number", "desc": "target player, to whom the monster will be Special Summoned" },
       { "id": "re", "type": "Effect", "desc": "reason effect" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "flipsumlimit",
@@ -619,7 +619,7 @@
       { "id": "c", "type": "Card", "desc": "card that might be Flip Summoned" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "triblimit",
@@ -631,7 +631,7 @@
       { "id": "c", "type": "Card", "desc": "card that might be Tributed" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "leftsscountval",
@@ -643,7 +643,7 @@
       { "id": "re", "type": "Effect", "desc": "reason effect" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "counterlimit",
@@ -655,7 +655,7 @@
       { "id": "c", "type": "Card", "desc": "card on which counters might be placed" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "togylimit",
@@ -667,7 +667,7 @@
       { "id": "c", "type": "Card", "desc": "card to be checked" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "tohandlimit",
@@ -680,7 +680,7 @@
       { "id": "tp", "type": "number", "desc": "triggering player" },
       { "id": "re", "type": "Effect", "desc": "reason effect" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "todecklimit",
@@ -692,7 +692,7 @@
       { "id": "c", "type": "Card", "desc": "card to be checked" },
       { "id": "tp", "type": "number", "desc": "triggering player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "banishlimit",
@@ -706,7 +706,7 @@
       { "id": "r", "type": "number", "desc": "reason" },
       { "id": "re", "type": "Effect", "desc": "reason effect" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "negactlimit",
@@ -717,7 +717,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "chid", "type": "number", "desc": "chain id" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "flagtarget",
@@ -736,7 +736,7 @@
       { "id": "chk", "type": "number", "desc": "check flag, 0 if target is being checked, 1 if happening" },
       { "id": "chkc", "type": "Card", "desc": "card to be checked as target" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "sscodecon",
@@ -748,7 +748,7 @@
       { "id": "sumtype", "type": "number", "desc": "Special Summon type" },
       { "id": "sp", "type": "number", "desc": "Special Summon player" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "revdmglimit",
@@ -762,7 +762,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "rc", "type": "Card", "desc": "reason card" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "refldmglimit",
@@ -777,7 +777,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "rc", "type": "Card", "desc": "reason card" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "changedmgval",
@@ -792,7 +792,7 @@
       { "id": "rp", "type": "number", "desc": "reason player" },
       { "id": "rc", "type": "Card", "desc": "reason card" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "sumproctg",
@@ -814,7 +814,7 @@
       { "id": "tbzone", "type": "number", "desc": "zone(s) where Tributes are available" },
       { "id": "exe", "type": "Effect", "desc": "(?) extra effect" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "sumprocop",
@@ -857,7 +857,7 @@
       { "id": "minc", "type": "number", "desc": "minimum of materials" },
       { "id": "maxc", "type": "number", "desc": "maximum of materials" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "ssprocop",
@@ -899,7 +899,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "rp", "type": "number", "desc": "reason player" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "matcheck",
@@ -920,7 +920,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be Summoned" }
     ],
-    "ret": [ "number", "number", "number" ]
+    "ret": "number, number, number"
   },
   {
     "id": "ecchk",
@@ -934,7 +934,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
     ],
-    "ret": [ "boolean" ]
+    "ret": "boolean"
   },
   {
     "id": "ecval",
@@ -962,7 +962,7 @@
       { "id": "e", "type": "Effect", "desc": "owner effect" },
       { "id": "c", "type": "Card", "desc": "card to be checked" }
     ],
-    "ret": [ "number" ]
+    "ret": "number"
   },
   {
     "id": "eval",
@@ -976,6 +976,6 @@
       "EFFECT_SET_SUMMON_COUNT_LIMIT", "EFFECT_DRAW_COUNT"
     ],
     "args": [ { "id": "e", "type": "Effect", "desc": "owner effect" } ],
-    "ret": [ "number" ]
+    "ret": "number"
   }
 ]

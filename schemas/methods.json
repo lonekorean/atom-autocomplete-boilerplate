@@ -3,17 +3,19 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [ "cls", "members" ],
+    "required": [ "cls", "methods" ],
     "properties": {
       "cls": { "type": "string" },
       "infer": { "type": "string" },
-      "members": {
+      "methods": {
         "type": "array",
         "items": {
           "type": "object",
-          "required": [ "id", "desc" ],
+          "required": [ "id", "desc", "args" ],
           "properties": {
             "id": { "type": "string" },
+            "desc": { "type": "string" },
+            "argstr": { "type": "string" },
             "args": {
               "type": "array",
               "items": {
@@ -29,8 +31,7 @@
             "ret": {
               "type": "array",
               "items": { "type": "string" }
-            },
-            "desc": { "type": "string" }
+            }
           }
         }
       }
