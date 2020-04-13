@@ -7,7 +7,8 @@
     "ygopro",
     "autocomplete",
     "ygoproapi",
-    "yugioh"
+    "yugioh",
+    "edopro"
   ],
   "repository": "https://github.com/piface314/autocomplete-ygoproapi",
   "author": "piface314",
