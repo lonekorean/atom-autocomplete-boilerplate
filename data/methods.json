@@ -3688,8 +3688,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Create a new global effect",
         "id": "GlobalEffect",
         "ret": [
@@ -4341,8 +4340,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Creates an empty group of cards",
         "id": "CreateGroup",
         "ret": [
@@ -4782,8 +4780,7 @@
         "id": "SetAIName"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Layout ends",
         "id": "ReloadFieldEnd"
       },
@@ -4866,8 +4863,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Used to check if damage has been calculated during the damage phase",
         "id": "IsDamageCalculated",
         "ret": [
@@ -4963,8 +4959,7 @@
         "id": "SetChainLimitTillChainEnd"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Check the existence of the current chain of the same name card launch, true that no card with the same name",
         "id": "CheckChainUniqueness",
         "ret": [
@@ -5352,15 +5347,19 @@
         ]
       },
       {
-        "args": {
-        },
-        "argstr": "[disable = true]",
+        "args": [
+          {
+            "id": "disable",
+            "opt": true,
+            "type": "boolean"
+          }
+        ],
+        "argstr": "[disable: boolean = true]",
         "desc": "So that the next operation does not check for the need for a wash card set or a hand card\nNote: If you do not call this function,\nIn addition to calling Duel.DiscardDeck and Duel.Draw remove the card from the card group or add the card to the card\nOr the card is added to the deck (not the top or bottom), the system automatically cleans the card group or the hand card at the end of the effect process\nIf you do not want to do so, for example, from the top of the card group, except for a card and other operations, you need to call this function\nThis function only ensures that no subsequent scrub detection is performed in the next operation",
         "id": "DisableShuffleCheck"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "In the call Duel.Damage / Duel.Recover, if is_step parameter is true, you need to call this function when the trigger point",
         "id": "RDComplete"
       },
@@ -5670,8 +5669,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns the current stage",
         "id": "GetCurrentPhase",
         "ret": [
@@ -5836,8 +5834,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns all linked object cards that are normally only used when an object is used",
         "id": "GetFirstTarget",
         "ret": [
@@ -5845,8 +5842,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Invalid This attack, the return value indicates whether the success\nThis attack has been invalidated by other effects or cause the attack card can not attack is false",
         "id": "NegateAttack",
         "ret": [
@@ -5959,8 +5955,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "In the call Duel.Equip, if is_step parameter is true, you need to call this function when the trigger point",
         "id": "EquipComplete"
       },
@@ -6037,8 +6032,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Interrupt the current effect, so that after the effect of treatment as not treated simultaneously, this function will cause the wrong time",
         "id": "BreakEffect"
       },
@@ -6073,8 +6067,7 @@
         "id": "ChangeTargetCard"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Refresh the card information on the field\nUnspecified or unclear principle Do not use this function to anil an infinite loop",
         "id": "Readjust"
       },
@@ -6126,8 +6119,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns the current round of players",
         "id": "GetTurnPlayer",
         "ret": [
@@ -6258,8 +6250,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "argstr": "integer [, param]",
         "desc": "Sets the object parameters of the chain that is currently being processed into param",
         "id": "SetTargetParam"
@@ -6339,14 +6330,12 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "The current processing of the chain of all the objects cleared",
         "id": "ClearTargetCard"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Check the player at the current stage whether the operation (whether at the beginning of the stage, such as the Seven King of the sword)",
         "id": "CheckPhaseActivity",
         "ret": [
@@ -6354,8 +6343,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "This function is called after determining that a number of calls to Duel.SpecialSummonStep are completed, for triggering an event",
         "id": "SpecialSummonComplete",
         "ret": [
@@ -6412,8 +6400,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns the two values ​​that represent the current venue code, as well as the source of the current venue effect\nThe site code refers to the code of the venue card in effect, or the value of the effect of the venue change\nSource Player is the controller of the card in effect, or the controller of the Poseidon Witch, etc.",
         "id": "GetEnvironment",
         "ret": [
@@ -6455,8 +6442,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "This function returns a card set that was actually manipulated before a card operation\nDuel. Destroy, Duel.Remove, Duel.SendtoGrave,\nDuel.SendtoHand, Duel.SendtoDeck, Duel.SendtoExtraP, Duel.Release,\nDuel.ChangePosition, Duel.SpecialSummon, Duel.DiscardDeck",
         "id": "GetOperatedGroup",
         "ret": [
@@ -6464,8 +6450,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Check whether the player can enter the combat phase of the round",
         "id": "IsAbleToEnterBP",
         "ret": [
@@ -7077,8 +7062,7 @@
         "id": "ChangeAttacker"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns the result of the current dice",
         "id": "GetDiceResult",
         "ret": [
@@ -7130,8 +7114,7 @@
         "id": "ShuffleHand"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns the result of the current coin",
         "id": "GetCoinResult",
         "ret": [
@@ -7248,8 +7231,7 @@
         "id": "IncreaseSummonedCount"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns the current number of turns",
         "id": "GetTurnCount",
         "ret": [
@@ -7501,8 +7483,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "",
         "id": "SelectSequence"
       },
@@ -8092,8 +8073,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Returns the chain number currently being processed",
         "id": "GetCurrentChain",
         "ret": [
@@ -8173,8 +8153,7 @@
         "id": "RaiseEvent"
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Return to the battle was attacked card, if the return nil said that a direct attack",
         "id": "GetAttackTarget",
         "ret": [
@@ -8182,8 +8161,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Return the card for this combat attack",
         "id": "GetAttacker",
         "ret": [
@@ -8747,8 +8725,7 @@
         ]
       },
       {
-        "args": {
-        },
+        "args": [],
         "desc": "Start the mess",
         "id": "BeginPuzzle"
       },
